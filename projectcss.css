@@ -1,0 +1,92 @@
+body {
+    width: 320px; 
+}
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/Users/razumova/Desktop/project/TTLakes/TTLakesCondensed-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: bold;
+    font-weight: 700;
+    src: url("/Users/razumova/Desktop/project/TTLakes/TTLakesCondensed-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: medium;
+    font-weight: 500;
+    src: url("/Users/razumova/Desktop/project/TTLakes/TTLakes-DemiBold.woff") format("woff");
+}
+.wrapper {
+    width: 320px; 
+    height: 509px;
+}
+
+.header {
+    width: 320px; 
+    height: 88px;
+    display: flex;
+    justify-content: flex-start;
+}  
+
+
+.header__menu--mv {
+    width: 40px;
+    height: 40px;
+    margin: 24px 16px;
+    
+    
+}
+.header__group--mv {
+    width: 96.55px;
+    height: 52px;
+    margin: 18px 16px 18px 0;
+   
+   
+}
+.header__line--mv {
+    width: 2px;
+    height: 32px;
+    margin: 28px 16px 28px 0;
+    
+   
+}
+.header__repair--mv {
+    width: 40px;
+    height: 40px;
+    margin: 24px 16px 24px 0;
+    
+}
+.header__search--mv {
+    width: 40px;
+    height: 40px;
+    margin: 24px 16px 24px 0;
+    
+}
+.main__title {
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+.title__icon{
+    width: 4px;
+    height: 40px;
+    margin: 24px 12px 24px 0;
+}
+.title__name{
+   color: #1B1C21;
+   font-size: 28px;
+   font-family: "TT Lakes", serif;
+   font-weight: 600;
+   margin: 24px 16px 24px 0;
+   width: 288px;
+   height: 40px;
+   line-height: 40px;
+}
+.wrapper__features {
+    font-family: "TT Lakes", serif;
+    font-size: 16px;
+    
+}
