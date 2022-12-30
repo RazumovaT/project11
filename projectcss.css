@@ -87,6 +87,34 @@ body {
 }
 .wrapper__features {
     font-family: "TT Lakes", serif;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.features__devices {
+    box-sizing: border-box;
+    width: 246px;
+    height: 40px;
+    text-align: start;
+    color: #7E7E82;
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
     font-size: 16px;
-    
+    padding: 8px 9px 8px 16px;
+    margin: 0 19px 24px 16px;
+}
+.features__services{
+    box-sizing: border-box;
+    width: 38px;
+    height: 24px;
+    font-size: 16px;
+    color: #7E7E82;
+    margin: 10px 19px 24px 0;
+}
+.features__services::after{
+    content:"";
+    width: 24px;
+    height: 40px;
+    background-color: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
