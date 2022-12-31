@@ -19,6 +19,12 @@ body {
     font-weight: 500;
     src: url("/Users/razumova/Desktop/project/TTLakes/TTLakes-DemiBold.woff") format("woff");
 }
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: light;
+    font-weight: 300;
+    src: url("/Users/razumova/Desktop/project/TTLakes/TTLakes-Light.woff") format("woff");
+}
 .wrapper {
     width: 320px; 
     height: 509px;
@@ -117,4 +123,31 @@ body {
     width: 24px;
     height: 40px;
     background-color: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+.block__description--1{
+    display:flex;
+    font-family: "TT Lakes", serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0 16px 16px 16px;
+    color: #1B1C21;
+    width: 288px;
+    height: 90px;
+    line-height: 18px;
+}
+.readNext{
+    display: flex;
+}
+.readNext__title{
+    font-family: "TT Lakes", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1B1C21;
+    margin: 16px 172px 0 16px;
+    width: 100px;
+    height:24px;
+}
+.wrapper__img {
+margin-left:0;
+margin-right: 0;
 }
