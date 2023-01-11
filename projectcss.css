@@ -5,29 +5,29 @@ body {
     font-family: 'TT Lakes';
     font-style: normal;
     font-weight: 400;
-    src: url("/Users/razumova/Desktop/project/TTLakes/TTLakesCondensed-Medium.woff") format("woff");
+    src: url("TTLakes/TTLakesCondensed-Medium.woff") format("woff");
 }
 @font-face {
     font-family: 'TT Lakes';
     font-style: bold;
     font-weight: 700;
-    src: url("/Users/razumova/Desktop/project/TTLakes/TTLakesCondensed-Bold.woff") format("woff");
+    src: url("TTLakes/TTLakesCondensed-Bold.woff") format("woff");
 }
 @font-face {
     font-family: 'TT Lakes';
     font-style: medium;
     font-weight: 500;
-    src: url("/Users/razumova/Desktop/project/TTLakes/TTLakes-DemiBold.woff") format("woff");
+    src: url("TTLakes/TTLakes-DemiBold.woff") format("woff");
 }
 @font-face {
     font-family: 'TT Lakes';
     font-style: light;
     font-weight: 300;
-    src: url("/Users/razumova/Desktop/project/TTLakes/TTLakes-Light.woff") format("woff");
+    src: url("TTLakes/TTLakes-Light.woff") format("woff");
 }
 .wrapper {
     width: 320px; 
-    height: 509px;
+    height: 597px;
 }
 
 .header {
@@ -134,20 +134,34 @@ body {
     width: 288px;
     height: 90px;
     line-height: 18px;
+    
 }
 .readNext{
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.readNext__icon{
+    width: 7px;
+    height: 10px;
+    margin-left: 24px;
+    margin-right: 0;
 }
 .readNext__title{
     font-family: "TT Lakes", serif;
     font-weight: 400;
     font-size: 16px;
     color: #1B1C21;
-    margin: 16px 172px 0 16px;
+    margin: 0 172px 9px 8px;
     width: 100px;
     height:24px;
+    
 }
 .wrapper__img {
 margin-left:0;
 margin-right: 0;
+margin-top: 16px;
+margin-bottom: 8px;
 }
