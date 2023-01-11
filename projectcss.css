@@ -1,3 +1,4 @@
+   
 body {
     width: 320px; 
 }
@@ -159,7 +160,7 @@ body {
     height:24px;
     
 }
-.wrapper__img {
+.main__img {
 margin-left:0;
 margin-right: 0;
 margin-top: 16px;
