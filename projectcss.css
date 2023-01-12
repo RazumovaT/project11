@@ -1,13 +1,4 @@
-   
-body {
-    width: 320px; 
-}
-@font-face {
-    font-family: 'TT Lakes';
-    font-style: normal;
-    font-weight: 400;
-    src: url("TTLakes/TTLakesCondensed-Medium.woff") format("woff");
-}
+
 @font-face {
     font-family: 'TT Lakes';
     font-style: bold;
@@ -27,10 +18,33 @@ body {
     src: url("TTLakes/TTLakes-Light.woff") format("woff");
 }
 .wrapper {
-    width: 320px; 
-    height: 597px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-
+.aside, .main {
+    width: 100%;
+    min-height: 1px;
+}
+@media (max-width: 320px){
+    .aside {
+        flex: 0 0 16,6666666667%;
+        max-width: 16,6666666667%;
+        order: 1;
+    }
+    .main {
+         flex: 0 0 83,3333333335%;
+         max-width: 83,3333333335%;
+         order: 2;
+    }
+}
+.main{
+    background-color: #F8F8F8;
+    width:320px;
+    height: 502px;
+}
 .header {
     width: 320px; 
     height: 88px;
@@ -92,11 +106,12 @@ body {
    height: 40px;
    line-height: 40px;
 }
-.wrapper__features {
+.main__features {
     font-family: "TT Lakes", serif;
+    font-weight: 300;
     display: flex;
     justify-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .features__devices {
     box-sizing: border-box;
@@ -117,13 +132,7 @@ body {
     height: 24px;
     font-size: 16px;
     color: #7E7E82;
-    margin: 10px 19px 24px 0;
-}
-.features__services::after{
-    content:"";
-    width: 24px;
-    height: 40px;
-    background-color: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    margin: 10px 0px 24px 0;
 }
 .block__description--1{
     display:flex;
@@ -139,20 +148,23 @@ body {
 }
 .readNext{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .readNext__icon{
+    align-self: flex-start;
     width: 7px;
     height: 10px;
-    margin-left: 24px;
+    margin-left: 16px;
     margin-right: 0;
+    padding: 7px 6px 8px 8px;
 }
 .readNext__title{
     font-family: "TT Lakes", serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     color: #1B1C21;
     margin: 0 172px 9px 8px;
