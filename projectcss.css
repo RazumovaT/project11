@@ -17,33 +17,18 @@
     font-weight: 300;
     src: url("TTLakes/TTLakes-Light.woff") format("woff");
 }
-
 .wrapper {
-    max-width: 1120px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-   
 }
-.aside, .main {
-    width: 100%;
-    min-height: 1px;
+@media (max-width: 480px){
+  .wrapper{
+    width: 320px;
+  }
 }
-@media (max-width: 320px){
-    .aside {
-        flex: 0 0 16,6666666667%;
-        max-width: 16,6666666667%;
-        order: 1;
-    }
-    .main {
-         flex: 0 0 83,3333333335%;
-         max-width: 83,3333333335%;
-         order: 2;
-    }
-}
-
 .main{
     background-color: #F8F8F8;
     width:320px;
@@ -183,18 +168,10 @@ margin-top: 16px;
 margin-bottom: 8px;
 }
 
-
-@media (max-width: 784px){
-    .aside {
-        flex: 0 0 16,6666666667%;
-        max-width: 16,6666666667%;
-        order: 1;
-    }
-    .main {
-         flex: 0 0 83,3333333335%;
-         max-width: 83,3333333335%;
-         order: 2;
-    }
+@media (max-width: 1200px){
+   .wrapper{
+    width: 790px;
+   }
 }
 
 .main{
@@ -323,16 +300,9 @@ height: 88px;
 
 
 @media (max-width: 1120px){
-    .aside {
-        flex: 0 0 16,6666666667%;
-        max-width: 16,6666666667%;
-        order: 1;
-    }
-    .main {
-         flex: 0 0 83,3333333335%;
-         max-width: 83,3333333335%;
-         order: 2;
-    }
+   .wrapper{
+    width: 1120px;
+   }
 }
 
 .main {
