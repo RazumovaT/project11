@@ -17,12 +17,15 @@
     font-weight: 300;
     src: url("TTLakes/TTLakes-Light.woff") format("woff");
 }
+
 .wrapper {
-    margin: 0;
+    max-width: 1120px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
+   
 }
 .aside, .main {
     width: 100%;
@@ -40,6 +43,7 @@
          order: 2;
     }
 }
+
 .main{
     background-color: #F8F8F8;
     width:320px;
@@ -179,6 +183,7 @@ margin-top: 16px;
 margin-bottom: 8px;
 }
 
+
 @media (max-width: 784px){
     .aside {
         flex: 0 0 16,6666666667%;
@@ -317,7 +322,6 @@ height: 88px;
 }
 
 
-
 @media (max-width: 1120px){
     .aside {
         flex: 0 0 16,6666666667%;
@@ -330,6 +334,7 @@ height: 88px;
          order: 2;
     }
 }
+
 .main {
     width: 1120px;
     height: 535px;
@@ -444,4 +449,19 @@ margin: 19px 21px 20px 0;
     width: 531px;
     height: 308px;
     margin: 0 28px 11px 0;
+}
+.circle{
+    display: flex;
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    left: 5%;
+    right: 82.5%;
+    top: 4.02%;
+    bottom: 89.28%;
+    border-radius: 20px;
+    background-image: url("/Users/razumova/Desktop/project/project11/lines.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
 }
