@@ -27,7 +27,7 @@
     width: 100%;
     min-height: 1px;
 }
-@media (max-width: 784px){
+@media (max-width: 992px){
     .aside {
         flex: 0 0 25%;
         max-width: 25%;
@@ -210,7 +210,7 @@ margin-right: 0;
 margin-top: 16px;
 margin-bottom: 8px;
 }
-@media (max-width: 1200px){
+@media (max-width: 1400px){
    .aside {
         flex: 0 0 25%;
         max-width: 25%;
@@ -278,16 +278,14 @@ margin-bottom: 8px;
     content: "";
     width: 2px;
     height: 32px;
-    
     background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
     background-size: auto;
     background-position: center; 
     order: 6;
     position: absolute;
-width: 2px;
-left: 935px;
-top: 4.56%;
-bottom: 55.2%;
+    left: 935px;
+    top: 4.56%;
+    bottom: 55.2%;
 }
 .header__icon--fixing{
     margin: 24px 16px 24px 0;
@@ -365,4 +363,3 @@ bottom: 55.2%;
     margin: 0 25px 10px 0;
     border-radius: 10px;
 }
-
