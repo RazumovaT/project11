@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'TT Lakes';
     font-style: bold;
@@ -17,63 +16,96 @@
     font-weight: 300;
     src: url("TTLakes/TTLakes-Light.woff") format("woff");
 }
+
 .wrapper {
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
 }
-@media (max-width: 480px){
-  .wrapper{
-    width: 320px;
-  }
+.aside, .main {
+    width: 100%;
+    min-height: 1px;
 }
-.main{
-    background-color: #F8F8F8;
-    width:320px;
-    height: 467px;
+@media (max-width: 784px){
+    .aside {
+        flex: 0 0 25%;
+        max-width: 25%;
+        order: 1;
+    }
+    .main {
+         flex: 0 0 75%;
+         max-width: 75%;
+         order: 2;
+    }
+}
+
+.wrapper{
+    max-width: 320px;
+    margin: 0 auto;
 }
 .header {
     width: 320px; 
     height: 88px;
     display: flex;
     justify-content: flex-start;
+    overflow: scroll;
 }  
 
 
-.header__menu {
+.header__icon {
+    display: flex;
+    background-color: #FF3E79;
     width: 40px;
     height: 40px;
+    left: 5%;
+    right: 82.5%;
+    top: 4.02%;
+    bottom: 89.28%;
+    border-radius: 20px;
+    
+}
+.header__icon--burger{
     margin: 24px 16px;
-    
-    
+    background-image: url("/Users/razumova/Desktop/project/project11/images/lines.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;   
 }
-.header__group {
-    width: 96.55px;
-    height: 52px;
+.header__icon--logo {
+    width: 96px;
+    height: 50px;
     margin: 18px 16px 18px 0;
-   
-   
+   background-image: url("/Users/razumova/Desktop/project/project11/images/Group.svg");
 }
-.header__line {
+.header__icon--divider{
     width: 2px;
     height: 32px;
     margin: 28px 16px 28px 0;
-    
-   
+    background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
 }
-.header__repair {
-    width: 40px;
-    height: 40px;
+.header__icon--fixing {
     margin: 24px 16px 24px 0;
-    
+    background-image: url("/Users/razumova/Desktop/project/project11/images/fixing.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;   
 }
-.header__search {
-    width: 40px;
-    height: 40px;
+.header__icon--searching {
     margin: 24px 16px 24px 0;
-    
+    background-image: url("/Users/razumova/Desktop/project/project11/images/searching.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center; 
+}
+.header__icon--call{
+    overflow: hidden;
+}
+.header__icon--chat{
+    overflow: hidden;
+}
+.header__icon--profile{
+    overflow: hidden;
 }
 .main__title {
     display: flex;
@@ -101,6 +133,7 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    overflow: scroll;
 }
 .features__devices {
     box-sizing: border-box;
@@ -122,8 +155,15 @@
     font-size: 16px;
     color: #7E7E82;
     margin: 10px 0px 24px 0;
+    overflow: scroll;
 }
-.block__description--1{
+.features__prices{
+    overflow: hidden;
+}
+.features__special{
+    overflow: hidden;
+}
+.block__description{
     display:flex;
     font-family: "TT Lakes", serif;
     font-weight: 300;
@@ -133,6 +173,7 @@
     width: 288px;
     height: 90px;
     line-height: 18px;
+    overflow: scroll;
     
 }
 .readNext{
@@ -162,79 +203,114 @@
     
 }
 .main__img {
+width: 320px;
+height: 230px;
 margin-left:0;
 margin-right: 0;
 margin-top: 16px;
 margin-bottom: 8px;
 }
-
 @media (max-width: 1200px){
-   .wrapper{
-    width: 790px;
-   }
+   .aside {
+        flex: 0 0 25%;
+        max-width: 25%;
+        order: 1;
+    }
+    .main {
+         flex: 0 0 75%;
+         max-width: 75%;
+         order: 2;
+    }
+    
+    }
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+.header {
+    width: 800px;
+    height: 88px;
+    }
 .main{
     background-color: #F8F8F8;
-    width: 784px;
+    width: 800px;
     height: 416px;
 }
-.aside__header {
-width: 768px;
-height: 88px;
-}
-.header__menu--2{
+.header__icon--burger{
     margin-right: 20px;
     order:0;
 }
-.header__line--2{
+.header__icon--divider{
     margin-right: 20px;
     order:1;
 }
-.header__group--2{
+.header__icon--logo{
     margin-right: 250px;
     order:2;
 }
-.header__call--2{
+.header__icon--call{
     margin: 24px 16px 24px 0;
     order: 3;
+    background-image: url("/Users/razumova/Desktop/project/project11/images/phone.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center; 
 }
-.header__chat--2{
+.header__icon--chat{
     margin: 24px 16px 24px 0;
     order: 4;
+    background-image: url("/Users/razumova/Desktop/project/project11/images/chat.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center; 
 }
-.header__profile--2{
-    margin: 24px 20px 24px 0;
+.header__icon--profile{
+    margin: 24px 42px 24px 0;
     order: 5;
+    background-image: url("/Users/razumova/Desktop/project/project11/images/profile.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center; 
 }
-.header__line--copy{
-    margin: 28px 20px 28px 0;
+.header__icon--profile::after{
+    content: "";
+    width: 2px;
+    height: 32px;
+    
+    background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
+    background-size: auto;
+    background-position: center; 
     order: 6;
+    position: absolute;
+width: 2px;
+left: 935px;
+top: 4.56%;
+bottom: 55.2%;
 }
-.header__repair--2{
+.header__icon--fixing{
     margin: 24px 16px 24px 0;
     order: 7;
 }
-.header__search--2{
+.header__icon--searching{
     margin:24px 24px 24px 0;
     order: 8;
 }
-.title__icon--2{
+.title__icon{
     margin-right: 20px;
 }
-.title__name--2{
+.title__name{
     width: 233px;
     margin: 24px 512px 32px 0;
 }
-.features__devices--2{
+
+.features__devices{
     width: 248px;
-    margin: 0 16px 14px 24px;
+    margin: 0 16px 32px 24px;
     line-height: 24px;
 }
 .features__services{
-   display: none;
-}
-.features__services--2{
     width: 185px;
     height: 24px;
     margin: 10px 24px 14px 0;
@@ -242,7 +318,7 @@ height: 88px;
     color: #7E7E82;
     line-height: 24px;
 }
-.features__prices--2{
+.features__prices{
  width: 128px;
  height: 24px;
  font-size: 16px;
@@ -250,188 +326,43 @@ height: 88px;
  line-height: 24px;  
  margin: 10px 25px 14px 0;
 }
-.features__special--2{
-    width: 128px;
+.features__special{
+    width: 148px;
     height: 24px;
     font-size: 16px;
     color: #7E7E82;
     line-height: 24px;  
     margin: 10px 0 14px 0;
+    overflow: scroll;
    }
-   .block--2{
+   .block{
     display: flex;
     justify-content: flex-start;
     align-items:flex-start;
    }
-   .text__group{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items:flex-start;
-   }
-.block__description--1{
-    display: none;
-   
-}
-.block__description--2{
+.textgroup__description{
     font-family: "TT Lakes", serif;
     font-weight: 300;
     font-size: 14px;
     color: #1B1C21;
     display: flex;
     width: 312px;
+    height: 160px;
     margin: 0 48px 10px 24px;
     line-height: 20px;
 }
-.readNext__icon--2{
+.textgroup__icon{
     margin-left: 25px;
     margin-right: 8px;
 }
-.readNext__title--2{
-   margin-bottom: 54px; 
+.textgroup__title{
+   margin:0 227px 54px 0; 
 }
-.main__img--2{
+.image__main{
     align-self: flex-start;
     width: 360px;
-    height: 260px;
-    margin: 0 25px 14px 0;
+    height: 208px;
+    margin: 0 25px 10px 0;
     border-radius: 10px;
 }
 
-
-@media (max-width: 1120px){
-   .wrapper{
-    width: 1120px;
-   }
-}
-
-.main {
-    width: 1120px;
-    height: 535px;
-}
-.header{
-    display: none;
-}
-.title__icon--3{
-    margin-top: 42px;
-    margin-right: 30px;
-}
-.title{
-    display: flex;
-}
-.title__name--3{
-    margin: 42px 450px 8px 0;
-}
-.title__report--3{
-    width: 125px;
-    height: 24px;
-    font-family: "TT Lakes", serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #1B1C21;
-    margin: 50px 8px 27px 0;
-}
-.title__repair--3{
-margin: 42px 32px 19px 0;
-}
-.title__repairStatus--3{
-    width: 119px;
-    height: 24px;
-    font-family: "TT Lakes", serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #1B1C21;
-    margin: 50px 9px 28px 0;
-}
-.title__search--3{
-    margin: 42px 32px 20px 0;
-}
-.features{
-    font-size: 16px;
-    color: #7E7E82;
-}
-.features__brands--3{
-    box-sizing: border-box;
-    width: 233px;
-    height: 40px;
-    text-align: start;
-    color: #7E7E82;
-    background-color: #FFFFFF;
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    font-size: 16px;
-    padding: 8px 9px 8px 16px;
-    margin: 8px 19px 14px 32px;
-}
-.features__devices--2{
-    display: none;
-}
-.features__devices--3{
-    width: 219px;
-    height: 24px;
-    margin: 17px 34px 22px 0;
-    
-}
-.features__prices--3{
-    margin: 17px 27px 7px 0;
-    width: 117px;
-    height: 39px;
-   
-}
-.features__services--2{
-    display: none;
-}
-.features__special--2{
-    display: none;
-}
-.features__adresses--3{
-width: 217px;
-height: 24px;
-margin: 19px 21px 20px 0;
-}
-.features__special--3{
-    margin: 20px 37px 15px 0;
-    width: 162px;
-    height: 28px;
-}
-.features__feedback--3{
-    margin: 0 433px 19px 56px;
-}
-.block__description--2{
-    display: none;
-}
-.block__description--3{
-    width: 490px;
-    height: 160px;
-    font-family: "TT Lakes", serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: #1B1C21;
-    margin: 0 36px 13px 34px;
-}
-.readNext__icon--3{
-    margin: 13px 8px 149px 32px;
-}
-.readNext__title--3{
-   margin: 13px 396px 149px 0; 
-}
-.main__img--3{
-    width: 531px;
-    height: 308px;
-    margin: 0 28px 11px 0;
-}
-.circle{
-    display: flex;
-    background-color: #FF3E79;
-    width: 40px;
-    height: 40px;
-    left: 5%;
-    right: 82.5%;
-    top: 4.02%;
-    bottom: 89.28%;
-    border-radius: 20px;
-    background-image: url("/Users/razumova/Desktop/project/project11/lines.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-}
