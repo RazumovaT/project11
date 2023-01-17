@@ -16,45 +16,46 @@
     font-weight: 300;
     src: url("TTLakes/TTLakes-Light.woff") format("woff");
 }
-
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: 'TT Lakes', sans-serif;
+}
+@media(max-width: 350px){
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 350px;
+    padding: 0 15px;
+}
+}
+@media(max-width: 991.98px){
+    [class*="__container"] {
+       max-width: 783px;
+       margin: 0 auto;
+       padding: 0 15px;
+    }
+}
 .wrapper {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.aside, .main {
-    width: 100%;
-    min-height: 1px;
-}
-@media (max-width: 992px){
-    .aside {
-        flex: 0 0 25%;
-        max-width: 25%;
-        order: 1;
-    }
-    .main {
-         flex: 0 0 75%;
-         max-width: 75%;
-         order: 2;
-    }
-}
-
-.wrapper{
-    max-width: 320px;
-    margin: 0 auto;
+    overflow: hidden; 
 }
 .header {
-    width: 320px; 
-    height: 88px;
-    display: flex;
-    justify-content: flex-start;
-    overflow: scroll;
-}  
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
 
 
 .header__icon {
-    display: flex;
+    display: inline-block;
     background-color: #FF3E79;
     width: 40px;
     height: 40px;
@@ -63,50 +64,131 @@
     top: 4.02%;
     bottom: 89.28%;
     border-radius: 20px;
+    margin: 24px 16px 24px 0;
+}
+
+    @media (max-width: 350px){
+        .header__container {
+            width: 350px; 
+            height: 88px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    .header__icon--burger{
+        background-image: url("/Users/razumova/Desktop/project/project11/images/lines.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;   
+    }
+
+    .header__icon--logo {
+        width: 96px;
+        height: 50px;
+        margin: 18px 16px 18px 0;
+       background-image: url("/Users/razumova/Desktop/project/project11/images/Group.svg");
+    }
+
+
+    .header__icon--divider{
+        width: 2px;
+        height: 32px;
+        margin: 28px 16px 28px 0;
+        background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
+    }
+    .header__icon--fixing {
+            background-image: url("/Users/razumova/Desktop/project/project11/images/fixing.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;   
+        }
+        .header__icon--searching {
+            background-image: url("/Users/razumova/Desktop/project/project11/images/searching.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center; 
+    }
+}
+    @media(max-width: 991.98px){
+        .header__container {
+            width: 798px; 
+            height: 88px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .header__icon--burger{
+            background-image: url("/Users/razumova/Desktop/project/project11/images/lines.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;   
+        }
     
-}
-.header__icon--burger{
-    margin: 24px 16px;
-    background-image: url("/Users/razumova/Desktop/project/project11/images/lines.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;   
-}
-.header__icon--logo {
-    width: 96px;
-    height: 50px;
-    margin: 18px 16px 18px 0;
-   background-image: url("/Users/razumova/Desktop/project/project11/images/Group.svg");
-}
-.header__icon--divider{
-    width: 2px;
-    height: 32px;
-    margin: 28px 16px 28px 0;
-    background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
-}
-.header__icon--fixing {
-    margin: 24px 16px 24px 0;
-    background-image: url("/Users/razumova/Desktop/project/project11/images/fixing.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;   
-}
-.header__icon--searching {
-    margin: 24px 16px 24px 0;
-    background-image: url("/Users/razumova/Desktop/project/project11/images/searching.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center; 
-}
-.header__icon--call{
-    overflow: hidden;
-}
-.header__icon--chat{
-    overflow: hidden;
-}
-.header__icon--profile{
-    overflow: hidden;
-}
+        .header__icon--divider{
+            width: 2px;
+            height: 32px;
+            margin: 28px 20px 28px 0;
+            background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
+        }
+        .header__icon--logo {
+            width: 96px;
+            height: 50px;
+            margin: 18px 16px 18px 0;
+           background-image: url("/Users/razumova/Desktop/project/project11/images/Group.svg");
+        }
+        .header__icon--call{
+            margin-left: 250px;
+            background-image: url("/Users/razumova/Desktop/project/project11/images/phone.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center; 
+        }
+        .header__icon--chat{
+            background-image: url("/Users/razumova/Desktop/project/project11/images/chat.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center; 
+        }
+        .header__icon--profile{
+            background-image: url("/Users/razumova/Desktop/project/project11/images/profile.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center; 
+        }
+        .header__icon--divider--copy{
+            width: 2px;
+            height: 32px;
+            background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
+            background-size: auto;
+            background-position: center; 
+            margin: 28px 20px 28px 0;
+        }
+        .header__icon--fixing {
+            margin: 24px 16px 24px 0;
+            background-image: url("/Users/razumova/Desktop/project/project11/images/fixing.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;   
+        }
+         .header__icon--searching {
+            background-image: url("/Users/razumova/Desktop/project/project11/images/searching.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center; 
+        }
+    }
+  
+
+    @media(max-width: 350px){
+        .header__icon--call,
+        .header__icon--chat,
+        .header__icon--profile,
+        .header__icon--divider--copy {
+          display: none;
+        }
+        }
+
+
 .main__title {
     display: flex;
     justify-content: stretch;
@@ -210,156 +292,4 @@ margin-right: 0;
 margin-top: 16px;
 margin-bottom: 8px;
 }
-@media (max-width: 1400px){
-   .aside {
-        flex: 0 0 25%;
-        max-width: 25%;
-        order: 1;
-    }
-    .main {
-         flex: 0 0 75%;
-         max-width: 75%;
-         order: 2;
-    }
-    
-    }
 
-.wrapper{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.header {
-    width: 800px;
-    height: 88px;
-    }
-.main{
-    background-color: #F8F8F8;
-    width: 800px;
-    height: 416px;
-}
-.header__icon--burger{
-    margin-right: 20px;
-    order:0;
-}
-.header__icon--divider{
-    margin-right: 20px;
-    order:1;
-}
-.header__icon--logo{
-    margin-right: 250px;
-    order:2;
-}
-.header__icon--call{
-    margin: 24px 16px 24px 0;
-    order: 3;
-    background-image: url("/Users/razumova/Desktop/project/project11/images/phone.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center; 
-}
-.header__icon--chat{
-    margin: 24px 16px 24px 0;
-    order: 4;
-    background-image: url("/Users/razumova/Desktop/project/project11/images/chat.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center; 
-}
-.header__icon--profile{
-    margin: 24px 42px 24px 0;
-    order: 5;
-    background-image: url("/Users/razumova/Desktop/project/project11/images/profile.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center; 
-}
-.header__icon--profile::after{
-    content: "";
-    width: 2px;
-    height: 32px;
-    background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
-    background-size: auto;
-    background-position: center; 
-    order: 6;
-    position: absolute;
-    left: 935px;
-    top: 4.56%;
-    bottom: 55.2%;
-}
-.header__icon--fixing{
-    margin: 24px 16px 24px 0;
-    order: 7;
-}
-.header__icon--searching{
-    margin:24px 24px 24px 0;
-    order: 8;
-}
-.title__icon{
-    margin-right: 20px;
-}
-.title__name{
-    width: 233px;
-    margin: 24px 512px 32px 0;
-}
-
-.features__devices{
-    width: 248px;
-    margin: 0 16px 32px 24px;
-    line-height: 24px;
-}
-.features__services{
-    width: 185px;
-    height: 24px;
-    margin: 10px 24px 14px 0;
-    font-size: 16px;
-    color: #7E7E82;
-    line-height: 24px;
-}
-.features__prices{
- width: 128px;
- height: 24px;
- font-size: 16px;
- color: #7E7E82;
- line-height: 24px;  
- margin: 10px 25px 14px 0;
-}
-.features__special{
-    width: 148px;
-    height: 24px;
-    font-size: 16px;
-    color: #7E7E82;
-    line-height: 24px;  
-    margin: 10px 0 14px 0;
-    overflow: scroll;
-   }
-   .block{
-    display: flex;
-    justify-content: flex-start;
-    align-items:flex-start;
-   }
-.textgroup__description{
-    font-family: "TT Lakes", serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: #1B1C21;
-    display: flex;
-    width: 312px;
-    height: 160px;
-    margin: 0 48px 10px 24px;
-    line-height: 20px;
-}
-.textgroup__icon{
-    margin-left: 25px;
-    margin-right: 8px;
-}
-.textgroup__title{
-   margin:0 227px 54px 0; 
-}
-.image__main{
-    align-self: flex-start;
-    width: 360px;
-    height: 208px;
-    margin: 0 25px 10px 0;
-    border-radius: 10px;
-}
