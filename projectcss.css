@@ -61,7 +61,7 @@ body {
     margin-left: 16px;
 }
 .header__icon--burger{
-    background-image: url("/Users/razumova/Desktop/project/project11/images/lines.svg");
+    background-image: url("images/lines.svg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;   
@@ -72,15 +72,15 @@ body {
     width: 96px;
     height: 50px;
     margin: 18px 16px 18px 0;
-   background-image: url("/Users/razumova/Desktop/project/project11/images/Group.svg");
+   background-image: url("images/Group.svg");
 }
 .header__icon--divider{
     width: 2px;
     height: 32px;
-    background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
+    background-image: url("images/divider.svg");
 }
 .header__icon--fixing {
-    background-image: url("/Users/razumova/Desktop/project/project11/images/fixing.svg");
+    background-image: url("images/fixing.svg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;   
@@ -88,7 +88,7 @@ body {
     background-position: center;   
 }
 .header__icon--searching {
-    background-image: url("/Users/razumova/Desktop/project/project11/images/searching.svg");
+    background-image: url("images/searching.svg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center; 
@@ -124,19 +124,19 @@ body {
         }
         .header__icon--call{
             margin-left: 250px;
-            background-image: url("/Users/razumova/Desktop/project/project11/images/phone.svg");
+            background-image: url("images/phone.svg");
             background-repeat: no-repeat;
             background-size: auto;
             background-position: center; 
         }
         .header__icon--chat{
-            background-image: url("/Users/razumova/Desktop/project/project11/images/chat.svg");
+            background-image: url("images/chat.svg");
             background-repeat: no-repeat;
             background-size: auto;
             background-position: center; 
         }
         .header__icon--profile{
-            background-image: url("/Users/razumova/Desktop/project/project11/images/profile.svg");
+            background-image: url("images/profile.svg");
             background-repeat: no-repeat;
             background-size: auto;
             background-position: center; 
@@ -144,7 +144,7 @@ body {
         .header__icon--divider--copy{
             width: 2px;
             height: 32px;
-            background-image: url("/Users/razumova/Desktop/project/project11/images/divider.svg");
+            background-image: url("images/divider.svg");
             background-size: auto;
             background-position: center; 
             margin: 28px 20px 28px 0;
