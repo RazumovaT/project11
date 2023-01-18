@@ -60,8 +60,9 @@ body {
 .button__form {
     display: flex;
     background-color: #FF3E79;
-    width: 40px;
     height: 40px;
+    width: 100%; 
+    width: 40px;
     left: 5%;
     right: 82.5%;
     top: 4.02%;
@@ -71,7 +72,6 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;  
-    max-width: 100%; 
 }
 .button__form:first-child{
     margin-left: 16px;
