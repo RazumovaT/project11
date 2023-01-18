@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
 <link rel="stylesheet" href="projectcss.css">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
@@ -9,15 +10,17 @@
  <body>
   <article class="wrapper">
 <header class="wrapper__header header">
-  <div class="header__icon header__icon--burger"></div>
-  <div class="header__icon--divider"></div>
-  <div class="header__icon--logo"></div>
-  <div class="header__icon header__icon--call"></div>
-  <div class="header__icon header__icon--chat"></div>
-  <div class="header__icon header__icon--profile"></div>
-  <div class="header__icon--divider--copy"></div>
-  <div class="header__icon header__icon--fixing"></div>
-  <div class="header__icon header__icon--searching"></div>
+<div class="header__button button">
+  <div class="button__form button--burger"></div>
+  <div class="button--divider"></div>
+  <div class="button--logo"></div>
+  <div class="button__form button--call"></div>
+  <div class="button__form button--chat"></div>
+  <div class="button__form button--profile"></div>
+  <div class="button--divider--copy"></div>
+  <div class="button__form button--fixing"></div>
+  <div class="button__form button--searching"></div>
+</div>
 </header>
 <main class="wrapper__main main">
   <div class="main">
@@ -25,19 +28,21 @@
       <div class="title__icon"><img src="images/highlight.svg" alt=""></div>
       <h1 class="title__name">Услуги и сервисы</h1> 
       <div class="title__request">Оставить заявку</div> 
-      <div class="title__request--icon header__icon header__icon--fixing"></div>
+      <div class="title__request--button button__form button--fixing"></div>
       <div class="title__status">Статус ремонта</div>
-      <div class="title__status--icon header__icon header__icon--searching"></div>
+      <div class="title__status--button button__form button--searching"></div>
   </section>
-  <section class="main__features features">
-    <span class="features__brands">Ремонтируемые бренды</span>
-    <span class="features__devices">Ремонтируемые устройства</span>
-    <span class="features__services">Дополнительные услуги</span>
-    <span class="features__prices">Цены на услуги</span>
-    <span class="features__special">Специальные цены</span>
-    <span class="features__adress">Адреса сервисных центров</span>
-    <span class="features__feedback">Отзывы</span>
-  </section>
+  <nav class="main__features features">
+    <ul class="features__menu menu">
+    <li class="menu__item"><a href="" class="menu__link menu__brands">Ремонтируемые бренды</a></li>
+    <li class="menu__item"><a href="" class="menu__link menu__devices">Ремонтируемые устройства</a></li>
+    <li class="menu__item"><a href="" class="menu__link menu__services">Дополнительные услуги</a></li>
+    <li class="menu__item"><a href="" class="menu__link menu__prices">Цены на услуги</a></li>
+    <li class="menu__item"><a href="" class="menu__link menu__adress">Адреса сервисных центров</a></li>
+    <li class="menu__item"><a href="" class="menu__link menu__special">Специальные цены</a></li>
+    <li class="menu__item"><a href="" class="menu__link menu__feedback">Отзывы</a></li>
+    <ul>
+  </nav>
   <section class="main__block block">
     <div class="block__story story">
       <span class="story__description">
