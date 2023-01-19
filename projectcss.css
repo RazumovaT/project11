@@ -39,16 +39,33 @@ body {
     }
 @media (max-width:497px){
 .header {
-    margin: 0;
+    margin: 0 auto;
     max-width: 320px;
+    width: 100%;
     
+}
+.main {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
 }
 }
 @media (min-width:498px) and (max-width: 992px){
-    .header {
-       max-width: 783px;
-       margin: 0 auto;
+    .features {
+        width: 100%;
+        max-width: 790px;
+        margin: 0 auto;
     }
+    .header {
+        max-width: 783px;
+        margin: 0 auto;
+        width: 100%;
+     }
+     .main {
+        max-width: 783px;
+        margin: 0 auto;
+        width: 100%;
+     }
 }
 .wrapper {
     display: flex;
@@ -108,10 +125,7 @@ body {
     }
 }
     @media (max-width: 497px){
-        .header {
-        width: 320px; 
-        height: 88px;
-        }
+
 
     .button--divider{
         margin: 28px 16px 28px 0;
@@ -119,10 +133,6 @@ body {
    
 }
     @media(min-width:498px) and (max-width: 992px){
-        .header {
-            width: 783px; 
-            height: 88px; 
-        }
         .button--divider{
             margin: 28px 20px 28px 0;
         }
@@ -149,7 +159,8 @@ body {
             margin: 24px 24px 24px 0;
         }
         .button__form {
-            max-width: 75%;
+            max-width: 40px;
+            width: 75%;
         }
     }
     @media(max-width: 497px){
@@ -266,15 +277,36 @@ body {
        }
     }
 @media(min-width: 993px){
+    .wrapper{
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+    .features {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+    .header {
+        max-width: 1120px;
+        margin: 0 auto;
+        width: 100%;
+     }
+     .main {
+        max-width: 1120px;
+        margin: 0 auto;
+        width: 100%;
+     }
     .button__form {
-        max-width: 50%;
+        max-width: 40px;
+        width: 50%;
     }
     .title__icon{
         width: 3px;
         margin: 42px 30px 8px 0;
     }
     .title__name{
-        margin: 42px 0 8px 0;
+        margin: 42px 0 20px 0;
     }
     .title__request{
         width: 129px;
