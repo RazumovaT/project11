@@ -299,7 +299,7 @@ body {
      }
     .button__form {
         max-width: 40px;
-        width: 50%;
+        width: 100%;
     }
     .title__icon{
         width: 3px;
@@ -542,10 +542,10 @@ body {
         margin: 0 36px 13px 34px;
     }
     .textgroup__icon{
-        margin: 0 8px 149px 32px;
+        margin: 0 8px 0 32px;
     }
     .textgroup__title{
-        margin: 8px 396px 149px 0;
+        margin: 8px 396px 0 0;
     }
     .image__main{
         width: 531px;
