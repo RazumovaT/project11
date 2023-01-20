@@ -78,8 +78,7 @@ body {
     display: flex;
     background-color: #FF3E79;
     height: 40px;
-    width: 100%; 
-    width: 40px;
+    max-width: 40px;
     left: 5%;
     right: 82.5%;
     top: 4.02%;
@@ -130,7 +129,10 @@ body {
     .button--divider{
         margin: 28px 16px 28px 0;
     }
-   
+    .button__form{
+    width: 100%; 
+    max-width: 40px;
+}
 }
     @media(min-width:498px) and (max-width: 992px){
         .button--divider{
@@ -215,7 +217,7 @@ body {
         height: 40px;
         text-align: left;
         padding: 6px 7px 8px 10px;
-        margin: 0 19px 24px 16px;
+        margin: 0 19px 24px 10px;
     }
     .menu__services{
         margin: 8px 0 32px 0;
@@ -274,6 +276,7 @@ body {
        .menu__special{
         width: 148px; 
         margin: 10px 0 14px 0;
+        overflow: scroll;
        }
     }
 @media(min-width: 993px){
@@ -299,7 +302,7 @@ body {
      }
     .button__form {
         max-width: 40px;
-        width: 100%;
+        width: 50%;
     }
     .title__icon{
         width: 3px;
@@ -327,10 +330,7 @@ body {
     .title__status--button{
         margin: 42px 32px 8px 0;
     }
-    .menu__item{
-        flex-wrap: wrap;
-    }
-    .menu__item .menu__brands{
+    .menu__brands{
         width: 233px;
         height: 40px;
         text-align: start;
@@ -338,7 +338,7 @@ body {
         border: 2px solid #B8FFEC;
         border-radius: 6px;
         padding: 8px 21px 7px 22px;
-        margin: 0 19px 0 32px;
+        margin: 0 19px 0 15px;
         order: -1;
     }
     .menu__devices {
@@ -374,6 +374,7 @@ body {
         order: 4;
         margin: 10px 0 19px 56px;
        }
+      
 
 }
 .menu  {
@@ -387,6 +388,7 @@ body {
     line-height: 24px; 
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
 .menu__item{
     display: flex;
