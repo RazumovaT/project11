@@ -25,6 +25,72 @@ body {
     line-height: 1;
     font-family: 'TT Lakes', 'TT Lakes' sans-serif;
 }
+.button{
+    display: flex;
+    justify-content:space-between;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden; 
+}
+.button__group--main{
+    display: flex;
+    justify-content:space-around;
+    align-content: flex-end;
+    width: 186px;
+    flex-wrap: nowrap;
+}
+.button__group--additional{
+    display: flex;
+    justify-content:flex-end;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.button__form {
+    display: flex;
+    background-color: #FF3E79;
+    height: 40px;
+    max-width: 40px;
+    left: 5%;
+    right: 82.5%;
+    top: 4.02%;
+    bottom: 89.28%;
+    border-radius: 20px;
+    margin: 24px 16px 24px 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;  
+}
+.button--burger{
+    background-image: url("images/lines.svg");
+   
+}
+.button--logo {
+    width: 96px;
+    height: 50px;
+    margin-top: 18px;
+   background-image: url("images/Group.svg");
+}
+.button--divider{
+    width: 2px;
+    height: 32px;
+    background-image: url("images/divider.svg");
+}
+.button--fixing {
+    background-image: url("images/fixing.svg");
+}
+.button--searching {
+    width: 40px;
+    background-image: url("images/searching.svg");
+}
+.button--divider{
+    margin: 28px 20px 28px 0;
+}
+
 @media (min-width: 1200px){
     .main {
         display: flex;
@@ -49,6 +115,18 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+.button__group--additional{
+    width: 132px;
+}
+.button--divider{
+    order:2;
+}
+.button--call,
+.button--chat,
+.button--profile,
+.button--divider--copy {
+  display: none;
+}
 }
 @media (min-width:498px) and (max-width: 992px){
     .features {
@@ -67,57 +145,7 @@ body {
         width: 100%;
      }
 }
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow: hidden; 
-}
 
-.button__form {
-    display: flex;
-    background-color: #FF3E79;
-    height: 40px;
-    max-width: 40px;
-    left: 5%;
-    right: 82.5%;
-    top: 4.02%;
-    bottom: 89.28%;
-    border-radius: 20px;
-    margin: 24px 16px 24px 0;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;  
-}
-.button__form:first-child{
-    margin-left: 16px;
-}
-.button--burger{
-    background-image: url("images/lines.svg");
-   
-}
-.button--logo {
-    width: 96px;
-    height: 50px;
-    margin: 18px 16px 18px 0;
-   background-image: url("images/Group.svg");
-}
-.button--divider{
-    width: 2px;
-    height: 32px;
-    background-image: url("images/divider.svg");
-}
-.button--fixing {
-    background-image: url("images/fixing.svg");
-}
-.button--searching {
-    background-image: url("images/searching.svg");
-}
-.header__button {
-    display: flex;
-    justify-self:flex-start;
-    align-items: flex-start;
-}
 @media (min-width: 993px){
     .header {
    display: none;
@@ -127,7 +155,7 @@ body {
 
 
     .button--divider{
-        margin: 28px 16px 28px 0;
+        margin: 28px auto;
     }
     .button__form{
     width: 100%; 
@@ -135,11 +163,12 @@ body {
 }
 }
     @media(min-width:498px) and (max-width: 992px){
-        .button--divider{
-            margin: 28px 20px 28px 0;
+        .button__group--additional{
+            display:flex;
+            justify-content: space-between;
+            width: 315px;
         }
         .button--call{
-            margin-left: 250px;
             background-image: url("images/phone.svg");
         }
         .button--chat{
@@ -152,34 +181,24 @@ body {
             width: 2px;
             height: 32px;
             background-image: url("images/divider.svg");
-            margin: 28px 20px 28px 0;
-        }
-        .button--fixing {
-            margin: 24px 16px 24px 0;
-        }
-         .button--searching {
-            margin: 24px 24px 24px 0;
+            margin: 28px auto;
         }
         .button__form {
             max-width: 40px;
             width: 75%;
         }
+        .button__group--help{
+            justify-self: end;
+        }
+       
     }
-    @media(max-width: 497px){
-        .button--call,
-        .button--chat,
-        .button--profile,
-        .button--divider--copy {
-          display: none;
-        }
-        }
  .main {
     background-color: #F8F8F8;
  }
 
 .title {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
 }
@@ -193,8 +212,9 @@ body {
     line-height: 40px;
 }
 .title__icon{
-    width: 4px;
     height: 40px;
+    position: relative;
+    background-color: #41F6D7;
 }
 @media(max-width: 497px){
     .title__icon{
@@ -203,8 +223,13 @@ body {
     .title__name{
         width: 288px;
         margin: 24px 16px 24px 0;
+        white-space: nowrap;
     }
-    .menu__item{
+    .title__text{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .menu{
         flex-wrap: nowrap;
     }
     .menu__devices{
@@ -221,30 +246,41 @@ body {
     }
     .menu__services{
         margin: 8px 0 32px 0;
+        overflow: scroll;
     }
     .menu__adress,
     .menu__brands,
     .menu__feedback,
-    .title__request,
-    .title__status,
-    .title__request--button,
-    .title__status--button
+    .title__help
    {
         display: none;
+    }
+    .title__icon{
+        width: 4px;
+        left: 1.25%;
+        right: 97.5%;
+        top: 18.76%;
+        bottom: 74.54%;
     }
 }
 
 @media(min-width:498px) and (max-width: 992px){
     .title__icon{
         margin: 24px 20px 24px 0;
+        width: 4px;
+        left: 4px;
+        top: 22.22%;
+        bottom: 69.84%;
     }
     .title__name{
        margin: 24px 512px 24px 0;
+       white-space: nowrap;
     }
-    .title__request,
-    .title__status,
-    .title__request--button,
-    .title__status--button,
+    .title__text{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .title__help,
     .menu__brands,
     .menu__adress,
     .menu__feedback{
@@ -304,12 +340,28 @@ body {
         max-width: 40px;
         width: 50%;
     }
+    .title__text{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .title__help{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
     .title__icon{
         width: 3px;
         margin: 42px 30px 8px 0;
+        left: 0.27%;
+        right: 99.46%;
+        top: 7.85%;
+        bottom: 84.67%;
+        border-radius: 2px;
     }
     .title__name{
         margin: 42px 0 20px 0;
+        white-space: nowrap;
     }
     .title__request{
         width: 129px;
@@ -317,18 +369,23 @@ body {
         margin: 50px 8px 10px 430px;
         font-weight: 300;
         color: #1B1C21;
+        white-space: nowrap;
     }
     .title__request--button{
         margin: 42px 32px 8px 0;
+        width: 40px;
+        flex-wrap: nowrap;
     }
     .title__status{
         width: 120px;
         height: 24px;
         margin: 50px 9px 15px 0;
         font-weight: 300;
+        white-space: nowrap;
     }
     .title__status--button{
         margin: 42px 32px 8px 0;
+        width: 40px;
     }
     .menu__brands{
         width: 233px;
@@ -372,23 +429,22 @@ body {
         width: 71px;
         height: 24px;
         order: 4;
-        margin: 10px 0 19px 56px;
+        margin: 10px 0 19px 32px;
+        overflow: scroll;
        }
       
 
 }
 .menu  {
-    box-sizing: border-box;
     font-family: "TT Lakes", serif;
+    box-sizing: border-box;
     font-weight: 300;
     color: #7E7E82;
     font-size: 16px;
     line-height: 24px; 
-    line-height: 24px;  
-    line-height: 24px; 
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    padding: 0;
 }
 .menu__item{
     display: flex;
