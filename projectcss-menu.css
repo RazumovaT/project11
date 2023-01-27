@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: bold;
+    font-weight: 700;
+    src: url("TTLakes/TTLakesCondensed-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: light;
+    font-weight: 300;
+    src: url("TTLakes/TTLakes-Light.woff") format("woff");
+}
+@font-face {
+    font-family: 'TT Lakes';
+    font-style: medium;
+    font-weight: 500;
+    src: url("TTLakes/TTLakes-DemiBold.woff") format("woff");
+}
+
+body{
+    min-width: 768px;
+    height: 1024px;
+    background-color:  #F2F2F2;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.wrapper{
+    width: 320px;
+    height: 1024px;
+    background-color: #fff;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+.board__button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.button__form {
+    background-color: #FF3E79;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;  
+}
+.button--logo {
+    width: 96px;
+    height: 50px;
+    margin: 18px 78px 46px 0;
+   background-image: url("images/Group.svg");
+}
+.button--cancel{
+    background-image: url("images/cancel.svg");
+    margin: 23px 16px 53px 24px;
+}
+.button--skan{
+    background-image: url("images/skan.svg");
+    margin: 23px 24px 53px 0;
+}
+.main__icon{
+    background-color: #41F6D7;
+    width: 4px;
+    height: 32px;
+    position: absolute;
+    border-top-right-radius:5px;
+    border-bottom-right-radius: 5px;
+}
+.main__menu{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__item{
+    margin: 0 0 32px 24px;
+}
+.item__link{
+    display: inline-block;
+    text-decoration: none;
+    color: #1B1C21;
+    font-weight: 300;
+}
+.menu:first-of-type > .item__link{
+    color: #7e7e82;
+}
+.menu__item:last-child{
+    margin-bottom: 268px;
+}
+.connection__button{
+    display: flex;
+    justify-content: flex-start;
+}
+.button--call{
+    background-image: url("images/phone.svg");
+    margin: 0 16px 16px 24px;
+}
+.button--chat{
+    background-image: url("images/chat.svg");
+    margin: 0 16px 16px 0;
+}
+.button--profile{
+    background-image: url("images/profile.svg");
+    margin: 0 16px 16px 0;
+}
+.connection__mail{
+    display: inline-block;
+    margin-bottom: 12px;
+    margin-left: 24px;
+    font-weight: 300;
+}
+.connection__numbers{
+    display: inline-block;
+    margin-left: 24px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.connection__language{
+    margin-left: 24px;
+    text-transform: uppercase;
+}
+.language__name{
+    margin-right: 7px;
+    margin-left: 0;
+    font-weight: 300;
+}
+.language__name:first-child{
+    color: #7E7E82;
+}
