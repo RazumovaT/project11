@@ -46,7 +46,13 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;  
+    border: none;
+    cursor: pointer;
 }
+.button__form:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    }
 .button--logo {
     width: 96px;
     height: 50px;
@@ -78,6 +84,12 @@ body{
 }
 .menu__item{
     margin: 0 0 32px 24px;
+}
+.item__link:hover{
+   transform: scale(1.1);
+   color: #7e7e82;
+   text-decoration: underline;
+   text-decoration-color: #41F6D7;
 }
 .item__link{
     display: inline-block;
@@ -113,12 +125,19 @@ body{
     margin-left: 24px;
     font-weight: 300;
 }
+.connection__mail:hover{
+    color: #7e7e82;
+    }
 .connection__numbers{
     display: inline-block;
     margin-left: 24px;
     margin-bottom: 40px;
     font-size: 24px;
     font-weight: 500;
+}
+.connection__numbers:hover{
+    cursor: pointer;
+    color: #7e7e82;
 }
 .connection__language{
     margin-left: 24px;
@@ -131,4 +150,9 @@ body{
 }
 .language__name:first-child{
     color: #7E7E82;
+}
+.language__name:hover{
+    cursor: pointer;
+    color:   #7E7E82;
+    transform: scale(1.2);
 }
