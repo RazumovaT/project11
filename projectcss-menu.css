@@ -85,7 +85,7 @@ body{
     color: #1B1C21;
     font-weight: 300;
 }
-.menu:first-of-type > .item__link{
+.item__link--choosen{
     color: #7e7e82;
 }
 .menu__item:last-child{
