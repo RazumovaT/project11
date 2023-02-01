@@ -336,6 +336,16 @@ body {
     flex-wrap: nowrap;
     padding: 0;
 }
+@media(max-width: 497px){
+    .menu{
+        overflow-x: scroll;
+    }
+}
+@media(min-width:498px) and (max-width: 992px){
+    .menu{
+        overflow-x: scroll;
+    }
+}
 .menu__item{
     display: flex;
 }
@@ -452,7 +462,6 @@ body {
             width: 148px;
              width: 148px; 
              margin: 10px 0 14px 10px;
-             overflow: scroll;
              order: 3;
             }
         }     
