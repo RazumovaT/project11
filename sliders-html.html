@@ -2,10 +2,10 @@
 <html lang="ru">
   <head>
 <link rel="stylesheet" href="sliders-css.css">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+<link href="
+https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.css
+" rel="stylesheet">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
@@ -43,18 +43,24 @@
   <div class="slide__button button__form--arrow"></div>
 </li>
 <template id="element__template">
-  <li class="swiper__slide swiper__slide--sony">
+  <li class="swiper__slide">
     <div class="slide__button button__form--arrow"></div>
   </li>
 </template>
+<div class="swiper-pagination"></div>
 </ul>
-<button class="main__icon textgroup__icon"></button>
-<button type="submit" class="main__showmoreButton">Показать все</button>
-<button type="submit" class="main__showlessButton button--hidden">Скрыть</button>
 </div>
+<button class="main__button textgroup__icon">
+<div type="button" class="main__showmoreButton">Показать все</div>
+</button>
+<button type="button" class="main__showlessButton button--hidden">Скрыть</button>
 </main>
 </div>
- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+<script src="
+https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js
+"></script>
  <script src="sliders-js.js"></script>
 </body>
 </html>

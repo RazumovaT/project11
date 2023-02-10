@@ -114,6 +114,7 @@ height: 100%;
 }
 @media (min-width: 993px){
     .swiper__slide {
+    min-width: 240px;
     margin: 24px 32px 16px 32px;
     }
 }
@@ -152,14 +153,24 @@ height: 100%;
 .swiper__slide--viewsonic {
     background-image: url(images/viewsonic.svg);
 }
+@media (min-width:498px) and (max-width: 992px){
+    .swiper__slide--viewsonic {
+        display: none;
+    }
+}
 .swiper__slide--sony {
     background-image: url(images/sony.svg);
 }
 @media (min-width:498px) and (max-width: 992px){
-    .swiper--hidden {
+    .swiper__slide--sony {
         display: none;
     }
+    .swiper__slide--sony .swiper--visible{
+        display: block;
+        min-width: 224px !important;
+    }
 }
+
 .textgroup__icon{ 
     background-image: url(images/arrow.svg);
     background-repeat: no-repeat;
@@ -176,23 +187,24 @@ height: 100%;
     
 }
 @media (min-width:498px) and (max-width: 992px){
-    .main__icon {
+    .main__button {
         margin:8px 0 34px 24px;
     }
 }
 @media (min-width: 993px){
-    .main__icon {
+    .main__button {
         margin: 8px 0 34px 31px;
     }
 }
 @media (max-width:497px){
-    .main__icon {
+    .main__button {
         display: none;
     }
 }
 .main__showmoreButton {
     position: absolute;
-    bottom: 34px;
+    left: 19px;
+    bottom: -5px; 
     background-color: #F8F8F8;
     width: 101px;
     height: 24px;
@@ -203,8 +215,9 @@ height: 100%;
 }
 }
 .main__showlessButton {
-position: absolute;
-bottom: 14px;
+position: relative;
+bottom: -17px;
+right: 3px;
 background-color: #F8F8F8;
 margin-left: 7px;
 }
