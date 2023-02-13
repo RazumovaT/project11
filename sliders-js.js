@@ -1,4 +1,8 @@
-
+var swiper = new Swiper(".swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 
 var buttonMore = document.querySelector('.main__showmoreButton');
 var buttonLess = document.querySelector('.main__showlessButton');
