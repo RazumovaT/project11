@@ -1,4 +1,9 @@
-var button = document.querySelector('.main__button');
+var swiper = new Swiper(".swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  
 var buttonMore = document.querySelector('.main__showmoreButton');
 var buttonLess = document.querySelector('.main__showlessButton');
 var icon = document.querySelector('.main__button');
