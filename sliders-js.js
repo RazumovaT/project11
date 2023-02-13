@@ -1,8 +1,4 @@
-var swiper = new Swiper(".swiper", {
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
+
 
 var buttonMore = document.querySelector('.main__showmoreButton');
 var buttonLess = document.querySelector('.main__showlessButton');
@@ -27,9 +23,8 @@ buttonMore.addEventListener('click',  () => {
     wrapper.appendChild(element);
     wrapper.appendChild(clonedElement1);
     wrapper.appendChild(clonedElement2);
-   
-    sony.style.display = 'flex';
-    viewsonic.style.display = 'flex';
+    sony.classList.remove('swiper--hidden');
+    viewsonic.classList.remove('swiper--hidden');
     buttonLess.classList.remove('button--hidden'); 
     icon.classList.toggle('icon__rotate');   
     buttonMore.classList.add('button--hidden');
@@ -43,8 +38,8 @@ buttonMore.addEventListener('click',  () => {
         buttonMore.classList.remove('button--hidden'); 
         icon.classList.toggle('icon__rotate');  
         buttonLess.classList.add('button--hidden');
-        sony.style.display = 'none';
-        viewsonic.style.display = 'none';
+        sony.classList.add('swiper--hidden');
+        viewsonic.classList.add('swiper--hidden');
         element.remove();
         clonedElement1.remove();
         clonedElement2.remove();

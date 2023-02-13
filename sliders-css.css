@@ -153,21 +153,12 @@ height: 100%;
 .swiper__slide--viewsonic {
     background-image: url(images/viewsonic.svg);
 }
-@media (min-width:498px) and (max-width: 992px){
-    .swiper__slide--viewsonic {
-        display: none;
-    }
-}
 .swiper__slide--sony {
     background-image: url(images/sony.svg);
 }
 @media (min-width:498px) and (max-width: 992px){
-    .swiper__slide--sony {
+    .swiper--hidden {
         display: none;
-    }
-    .swiper__slide--sony .swiper--visible{
-        display: block !important;
-        min-width: 224px;
     }
 }
 
