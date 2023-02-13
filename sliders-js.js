@@ -18,9 +18,11 @@ clonedElement2.classList.add('swiper__slide--apple');
 function click() {
 buttonMore.addEventListener('click',  () => {
    
+   
     wrapper.appendChild(element);
     wrapper.appendChild(clonedElement1);
     wrapper.appendChild(clonedElement2);
+   
     sony.style.display = 'flex';
     viewsonic.style.display = 'flex';
     buttonLess.classList.remove('button--hidden'); 
@@ -30,9 +32,12 @@ buttonMore.addEventListener('click',  () => {
 
 });
     buttonLess.addEventListener('click', function () {
+
+        sony.classList.add('swiper--hidden');
+        sony.classList.remove('swiper--visible');
         buttonMore.classList.remove('button--hidden'); 
         icon.classList.toggle('icon__rotate');  
-        buttonLess.classList.add('button--hidden'); 
+        buttonLess.classList.add('button--hidden');
         sony.style.display = 'none';
         viewsonic.style.display = 'none';
         element.remove();

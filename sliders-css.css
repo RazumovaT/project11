@@ -166,8 +166,8 @@ height: 100%;
         display: none;
     }
     .swiper__slide--sony .swiper--visible{
-        display: block;
-        min-width: 224px !important;
+        display: block !important;
+        min-width: 224px;
     }
 }
 
