@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "swiper": "^9.0.5"
-  }
+  },
+  "name": "project11",
+  "description": "cps project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RazumovaT/project11.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Razumova <razumova08@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RazumovaT/project11/issues"
+  },
+  "homepage": "https://github.com/RazumovaT/project11#readme"
 }

@@ -70,7 +70,7 @@ Dell. Только у нас вы можете
         в свою очередь, советуют нас родным и близким.
       </span>
         <section class="story__textgroup textgroup">
-  <img class="textgroup__icon" src="images/expand.svg">
+  <img class="textgroup__icon icon--readMore" src="images/expand.svg">
   <span class="textgroup__title">Читать далее</span>
   </section>
   </div>
@@ -81,7 +81,135 @@ Dell. Только у нас вы можете
 </section>
 </section>
 </div>
-  </main>
+  
 </div>
+
+<div class="container">
+<div class="title--container">Ремонт техники различных брендов</div>
+<div class="swiper swiper--brands">
+<ul class="swiper__wrapper">
+<li class="swiper__slide swiper__slide--lenovo slide--brands">
+  <div class="button__form--arrow"></div>
+</li>
+<li class="swiper__slide swiper__slide--samsung slide--brands">
+  <div class="button__form--arrow"></div>
+</li>
+<li class="swiper__slide swiper__slide--apple slide--brands">
+  <div class="button__form--arrow"></div>
+</li>
+<li class="swiper__slide swiper__slide--bosch slide--brands">
+  <div class="button__form--arrow"></div>
+</li>
+<li class="swiper__slide swiper__slide--hp slide--brands">
+  <div class="button__form--arrow"></div>
+</li>
+<li class="swiper__slide swiper__slide--acer slide--brands">
+  <div class="button__form--arrow"></div>
+</li>
+<li class="swiper__slide swiper__slide--viewsonic slide--brands swiper--hidden">
+  <div class="button__form--arrow"></div>
+</li>
+<li class="swiper__slide swiper__slide--sony slide--brands swiper--hidden">
+  <div class="button__form--arrow"></div>
+</li>
+<template id="element__template">
+  <li class="swiper__slide slide--brands">
+    <div class="slide__button button__form--arrow"></div>
+  </li>
+</template>
+<div class="swiper-pagination"></div>
+</ul>
+</div>
+<button class="main__button textgroup__icon">
+<div type="button" class="showmoreButton">Показать все</div>
+</button>
+<button type="button" class="showlessButton button--hidden">Скрыть</button>
+<div class="title--container">Ремонт различных видов техники</div>
+<div class="swiper swiper--fixing">
+  <div class="swiper__wrapper">
+<button class="fixing__button swiper__slide"><span class="button__name">Ремонт ноутбуков</span><div class="button__form--arrow"></div></button>
+<button class="fixing__button swiper__slide"><span class="button__name">Ремонт планшетов</span><div class="button__form--arrow"></div></button>
+<button class="fixing__button swiper__slide"><span class="button__name">Ремонт ПК</span><div class="button__form--arrow"></div></button>
+<button class="fixing__button swiper__slide button--hidden"><span class="button__name">Ремонт  мониторов</span><div class="button__form--arrow"></div></button>
+</div>
+</div>
+<button class="main__button textgroup__icon icon--fixing">
+  <div type="button" class="showmoreButton showmore--fixing">Показать все</div>
+  </button>
+  <button type="button" class="showlessButton button--hidden showless--fixing">Скрыть</button>
+<div class="prices">
+  <div class="title--container">Цены на услуги</div>
+  <div class="prices__title--box">
+  <span class="title--services">Ремонтные услуги</span>
+  <span class="title--price">Цена</span>
+  <span class="title__duration">Срок</span>
+</div>
+</div>
+  <div class="swiper__prices swiper">
+<ul class="swiper__wrapper wrapper--prices">
+<li class="swiper__slide slide--services slide--testing">
+<p class="prices__title">Ремонтные услуги</p>
+<p class="prices__description">Тестирование с выдачей заключения</p>
+<p class="prices__title">Цена</p>
+<p class="prices__description">1 000 ₽</p>
+<p class="prices__title">Срок</p>
+<p class="prices__description">30-120 мин</p>
+<div class="button__form button--run">Заказать</div>
+</li>
+<li class="swiper__slide slide--services slide--diagnostics">
+  <p class="prices__title">Ремонтные услуги</p>
+  <p class="prices__description">Диагностика</p>
+  <p class="prices__title">Цена</p>
+  <p class="prices__description">Бесплатно</p>
+  <p class="prices__title">Срок</p>
+  <p class="prices__description">30 мин</p>
+  <div class="button__form button--run">Заказать</div>
+  </li>
+  <li class="swiper__slide slide--services slide--display">
+    <p class="prices__title">Ремонтные услуги</p>
+    <p class="prices__description">Замена дисплея</p>
+    <p class="prices__title">Цена</p>
+    <p class="prices__description">1 000 ₽</p>
+    <p class="prices__title">Срок</p>
+    <p class="prices__description">30-120 мин</p>
+    <div class="button__form button--run">Заказать</div>
+    </li>
+    <li class="swiper__slide slide--services slide--speakers">
+      <p class="prices__title">Ремонтные услуги</p>
+      <p class="prices__description">Замена полифонического динамика</p>
+      <p class="prices__title">Цена</p>
+      <p class="prices__description">1 000 ₽</p>
+      <p class="prices__title">Срок</p>
+      <p class="prices__description">30-120 мин</p>
+      <div class="button__form button--run">Заказать</div>
+      </li>
+      <li class="swiper__slide slide--services slide--software">
+        <p class="prices__title">Ремонтные услуги</p>
+        <p class="prices__description">Замена программного обеспечения</p>
+        <p class="prices__title">Цена</p>
+        <p class="prices__description">1 000 ₽</p>
+        <p class="prices__title">Срок</p>
+        <p class="prices__description">30-120 мин</p>
+        <div class="button__form button--run">Заказать</div>
+        </li>
+      </ul>
+    </div>
+    <div class="offer">
+      Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+    </div>
+    <a href="" class="offerLink">Получить коммерческое предложение
+      <img src="images/pinkArrow.svg" alt="" class="offerLink--icon">
+    </a>
+    <footer class="footer">
+      <span class="footer__information">© 2019 CPS</br>
+        Разработано командой Apesong </span>
+      <span class="footer__information">Политика конфиденциальности</span>
+      <span class="footer__information">Информация, размещенная на данной странице, не является публичной офертой</span>
+    </footer>
+</div>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js"></script>
+ <script src="sliders-js.js"></script>
 </body>
 </html>

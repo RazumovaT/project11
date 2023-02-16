@@ -13,34 +13,34 @@ https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.css
  <body>
 <div class="wrapper">
 <header class="header">
-  <span class="header__title">Ремонт техники различных брендов</span>
+  <div class="title">Ремонт техники различных брендов</div>
 </header>
 <main class="main">
 <div class="main__swiper swiper">
 <ul class="swiper__wrapper">
 <li class="swiper__slide swiper__slide--lenovo">
-  <div class="slide__button button__form--arrow"></div>
+  <div class="button__form--arrow"></div>
 </li>
 <li class="swiper__slide swiper__slide--samsung">
-  <div class="slide__button button__form--arrow"></div>
+  <div class="button__form--arrow"></div>
 </li>
 <li class="swiper__slide swiper__slide--apple">
-  <div class="slide__button button__form--arrow"></div>
+  <div class="button__form--arrow"></div>
 </li>
 <li class="swiper__slide swiper__slide--bosch">
-  <div class="slide__button button__form--arrow"></div>
+  <div class="button__form--arrow"></div>
 </li>
 <li class="swiper__slide swiper__slide--hp">
-  <div class="slide__button button__form--arrow"></div>
+  <div class="button__form--arrow"></div>
 </li>
 <li class="swiper__slide swiper__slide--acer">
-  <div class="slide__button button__form--arrow"></div>
+  <div class="button__form--arrow"></div>
 </li>
 <li class="swiper__slide swiper__slide--viewsonic swiper--hidden">
-  <div class="slide__button button__form--arrow"></div>
+  <div class="button__form--arrow"></div>
 </li>
 <li class="swiper__slide swiper__slide--sony swiper--hidden">
-  <div class="slide__button button__form--arrow"></div>
+  <div class="button__form--arrow"></div>
 </li>
 <template id="element__template">
   <li class="swiper__slide">
@@ -51,16 +51,25 @@ https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.css
 </ul>
 </div>
 <button class="main__button textgroup__icon">
-<div type="button" class="main__showmoreButton">Показать все</div>
+<div type="button" class="showmoreButton">Показать все</div>
 </button>
-<button type="button" class="main__showlessButton button--hidden">Скрыть</button>
+<button type="button" class="showlessButton button--hidden">Скрыть</button>
+<div class="title">Ремонт различных видов техники</div>
+<div class="fixing">
+<button class="fixing__button"><span class="button__name">Ремонт ноутбуков</span><div class="button__form--arrow"></div></button>
+<button class="fixing__button"><span class="button__name">Ремонт планшетов</span><div class="button__form--arrow"></div></button>
+<button class="fixing__button"><span class="button__name">Ремонт ПК</span><div class="button__form--arrow"></div></button>
+<button class="fixing__button button--hidden"><span class="button__name">Ремонт  мониторов</span><div class="button__form--arrow"></div></button>
+</div>
+<button class="main__button textgroup__icon icon--fixing">
+  <div type="button" class="showmoreButton showmore--fixing">Показать все</div>
+  </button>
+  <button type="button" class="showlessButton button--hidden showless--fixing">Скрыть</button>
 </main>
 </div>
 
 
-<script src="
-https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js
-"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js"></script>
  <script src="sliders-js.js"></script>
 </body>
 </html>
