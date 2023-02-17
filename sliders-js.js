@@ -1,3 +1,9 @@
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  slidesPerView: 1.2
+});
 
 
 var buttonMore = document.querySelector('.showmoreButton');
