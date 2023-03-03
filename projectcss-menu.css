@@ -27,7 +27,7 @@ body{
     letter-spacing: -0.2px;
 }
 
-.wrapper{
+.popup--menu{
     width: 320px;
     height: 1024px;
     background-color: #fff;
@@ -67,7 +67,7 @@ body{
     background-image: url("images/skan.svg");
     margin: 23px 24px 53px 0;
 }
-.main__icon{
+.body__icon{
     background-color: #41F6D7;
     width: 4px;
     height: 32px;
@@ -75,14 +75,14 @@ body{
     border-top-right-radius:5px;
     border-bottom-right-radius: 5px;
 }
-.main__menu{
+.body__menu{
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.menu__item{
+.nav__item{
     margin: 0 0 32px 24px;
 }
 .item__link:hover{
@@ -100,7 +100,7 @@ body{
 .item__link--choosen{
     color: #7e7e82;
 }
-.menu__item:last-child{
+.nav__item:last-child{
     margin-bottom: 268px;
 }
 .connection__button{
