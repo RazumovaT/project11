@@ -9,17 +9,58 @@
     <title>CPS</title>
   </head> 
  <body>
+  <div class="content">
+<!--Popup - menu-->
+    <div class="popup--menu popup" id="popupmenu">
+      <div class="board">
+     <div class="board__button">
+     <a href="" class="button__form button--cancel button--pink popup--close"></a>
+     <div class="button--logo logo--board"></div>
+     <button class="button__form button--skan button--pink"></button>
+     </div>
+    </div>
+     <div class="popup__body">
+       <div class="body__icon"></div>
+       <ul class="body__menu nav">
+        <li class="nav__item item"><a href="" class="item__link item__link--choosen">Ремонт техники</a></li>
+        <li class="nav__item"><a href="" class="item__link">Услуги и сервисы</a></li>
+        <li class="nav__item"><a href="" class="item__link">Корпоративным клиентам</a></li>
+        <li class="nav__item"><a href="" class="item__link">Продавцам техники</a></li>
+        <li class="nav__item"><a href="" class="item__link">Партнерам</a></li>
+        <li class="nav__item"><a href="" class="item__link">Производителям</a></li>
+        <li class="nav__item"><a href="" class="item__link">Наши сервисные центры</a></li>
+        <li class="nav__item"><a href="" class="item__link">Контакты</a></li>
+       </ul>
+      </div>
+      <div class="connection">
+       <div class="connection__button">
+     <a href="#popupcall" class="button__form button--pink connection--call call--menu"></a>
+     <a href="#popupconnection" class="button__form button--pink connection--chat chat--menu"></a>
+     <a href="" class="button__form button--pink connection--profile"></a>
+       </div>
+       <span class="connection__mail">mail@cps.com</span>
+       <span class="connection__numbers">8 800 890 8900</span>
+       <div class="connection__language language">
+     <span class="language__name language__name--ru">ru</span>
+     <span class="language__name language__name--en">en</span>
+     <span class="language__name language__name--ch">ch</span>
+       </div>
+      </div>
+     </div>
+<!--Main - content-->
+  <div class="main__wrapper">
   <div class="wrapper">
+<!--Header--> 
 <header class="wrapper__header header">
     <div class="header__button button">
 <div class="button__group--main">
-  <button class="button__form button--burger button--pink"></button>
+  <a href="#popupmenu" class="button__form button--burger button--pink popup--link"></a>
   <div class="button--divider"></div>
   <div class="button--logo"></div>
   </div>
 <div class="button__group--additional">
-  <button class="button__form button--call button--pink"></button>
-  <button class="button__form button--chat button--pink"></button>
+  <button class="button__form button--call button--pink call--header"></button>
+  <button class="button__form button--chat button--pink chat--header"></button>
   <button class="button__form button--profile button--pink"></button>
   <div class="button--divider--copy"></div>
   <button class="button__form button--fixing button--pink"></button>
@@ -27,6 +68,7 @@
   </div>
 </div>
 </header>
+<!--Services - title-->
 <main class="wrapper__main main">
   <div class="main">
   <section class="main__title title">
@@ -41,6 +83,7 @@
       <button class="title__status--button button__form button--searching button--pink"></button>
     </div>  
   </section>
+  <!--Menu - features-->
   <nav class="main__features features">
     <ul class="features__menu menu">
     <li class="menu__item"><a href="" class="menu__link menu__brands">Ремонтируемые бренды</a></li>
@@ -52,6 +95,7 @@
     <li class="menu__item"><a href="" class="menu__link menu__feedback">Отзывы</a></li>
     <ul>
   </nav>
+  <!--Story - description-->
   <section class="main__block block">
     <div class="block__story story">
       <span class="story__description">
@@ -75,6 +119,7 @@ Dell. Только у нас вы можете
   <span class="textgroup__title">Читать далее</span>
   </section>
   </div>
+  <!--Image - block-->
   <section class="block__image image">
   <img class="image__main" src="images/CPS.jpg" alt="">
 </section>
@@ -82,65 +127,125 @@ Dell. Только у нас вы можете
 </section>
 </section>
 </div>
-  
-</div>
-
+  <!--Brands - swiper-->
 <div class="container">
 <div class="title--container">Ремонт техники различных брендов</div>
-<div class="swiper swiper--brands">
-<ul class="swiper__wrapper">
-<li class="swiper__slide swiper__slide--lenovo slide--brands">
-  <div class="button__form--arrow"></div>
-</li>
-<li class="swiper__slide swiper__slide--samsung slide--brands">
-  <div class="button__form--arrow"></div>
-</li>
-<li class="swiper__slide swiper__slide--apple slide--brands">
-  <div class="button__form--arrow"></div>
-</li>
-<li class="swiper__slide swiper__slide--bosch slide--brands">
-  <div class="button__form--arrow"></div>
-</li>
-<li class="swiper__slide swiper__slide--hp slide--brands">
-  <div class="button__form--arrow"></div>
-</li>
-<li class="swiper__slide swiper__slide--acer slide--brands">
-  <div class="button__form--arrow"></div>
-</li>
-<li class="swiper__slide swiper__slide--viewsonic slide--brands swiper--hidden">
-  <div class="button__form--arrow"></div>
-</li>
-<li class="swiper__slide swiper__slide--sony slide--brands swiper--hidden">
-  <div class="button__form--arrow"></div>
-</li>
-<template id="element__template">
-  <li class="swiper__slide slide--brands">
-    <div class="slide__button button__form--arrow"></div>
-  </li>
-</template>
-</ul>
-<div class="swiper-pagination"></div>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper wrapper--brands">
+    <div class="swiper-slide">
+      <div class="slide--brandsname">
+        <img class="img1" src="images/lenovo.svg" alt="">
+        <div class="button__form--arrow"></div>
+      </div>
+  </div>
+    <div class="swiper-slide slide--brands"><div class="slide--brandsname">
+      <img src="images/samsung.svg" alt="">
+      <div class="button__form--arrow"></div>
+    </div>
+    </div>
+    <div class="swiper-slide slide--brands"><div class="slide--brandsname">
+      <img src="images/apple.svg" alt="">
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide slide--brands"><div class="slide--brandsname">
+      <img src="images/bosch.svg" alt="">
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide slide--brands"><div class="slide--brandsname">
+      <img src="images/hp.svg" alt="">
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide slide--brands"><div class="slide--brandsname">
+      <img src="images/acer.svg" alt="">
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide slide--brands"><div class="slide--brandsname slide--viewsonic hidden">
+      <img src="images/viewsonic.svg" alt="">
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide slide--brands"><div class="slide--brandsname slide--sony hidden">
+      <img src="images/sony.svg" alt="">
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <template id="element__template1">
+      <div class="swiper-slide">
+      <div class="swiper__slide slide--brandsname">
+        <img class="img1" src="images/lenovo.svg" alt="">
+        <div class="slide__button button__form--arrow"></div>
+      </div>
+      </div>
+    </template>
+    <template id="element__template2">
+      <div class="swiper-slide">
+      <div class="swiper__slide slide--brandsname">
+        <img src="images/samsung.svg" alt="">
+        <div class="slide__button button__form--arrow"></div>
+      </div>
+      </div>
+    </template>
+    <template id="element__template3">
+      <div class="swiper-slide">
+      <div class="swiper__slide slide--brandsname">
+        <img src="images/apple.svg" alt="">
+        <div class="slide__button button__form--arrow"></div>
+      </div>
+      </div>
+    </template>
+  </div>
+  <div class="swiper-pagination"></div>
 </div>
 <button class="main__button textgroup__icon">
 <div type="button" class="showmoreButton">Показать все</div>
 </button>
 <button type="button" class="showlessButton button--hidden">Скрыть</button>
+<!--Fixing - swiper-->
 <div class="title--container">Ремонт различных видов техники</div>
-<div class="swiper swiper--fixing">
-  <div class="swiper__wrapper">
-<button class="fixing__button swiper__slide"><span class="button__name">Ремонт ноутбуков</span><div class="button__form--arrow"></div></button>
-<button class="fixing__button swiper__slide"><span class="button__name">Ремонт планшетов</span><div class="button__form--arrow"></div></button>
-<button class="fixing__button swiper__slide"><span class="button__name">Ремонт ПК</span><div class="button__form--arrow"></div></button>
-<button class="fixing__button swiper__slide button--hidden"><span class="button__name">Ремонт  мониторов</span><div class="button__form--arrow"></div></button>
-</div>
-
-<div class="swiper-pagination"></div>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper wrapper--fixing">
+    <div class="swiper-slide">
+      <div class="slide--fixing">
+        <span class="slide--name">Ремонт ноутбуков</span>
+        <div class="button__form--arrow"></div>
+      </div>
+  </div>
+    <div class="swiper-slide"><div class="slide--fixing">
+      <span class="slide--name">Ремонт планшетов </span>
+      <div class="button__form--arrow"></div>
+    </div>
+    </div>
+    <div class="swiper-slide"><div class="slide--fixing">
+      <span class="slide--name">Ремонт планшетов </span> 
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide fixing--pk hidden"><div class="slide--fixing">
+      <span class="slide--name">Ремонт ПК</span>
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide button--hidden fixing--display"><div class="slide--fixing">
+      <span class="slide--name">Ремонт  мониторов</span>
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide button--hidden fixing--phone"><div class="slide--fixing">
+      <span class="slide--name">Ремонт  телефонов</span>
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide button--hidden fixing--camera"><div class="slide--fixing">
+      <span class="slide--name">Ремонт  камер</span>
+      <div class="button__form--arrow"></div>
+    </div></div>
+    <div class="swiper-slide button--hidden fixing--equipment"><div class="slide--fixing">
+      <span class="slide--name">Ремонт  оргтехники</span>
+      <div class="button__form--arrow"></div>
+    </div></div>
+  </div>
+  <div class="swiper-pagination"></div>
 </div>
 <button class="main__button textgroup__icon icon--fixing">
   <div type="button" class="showmoreButton showmore--fixing">Показать все</div>
   </button>
   <button type="button" class="showlessButton button--hidden showless--fixing">Скрыть</button>
-<div class="prices">
+<!--Prices - swiper-->
+  <div class="prices">
   <div class="title--container">Цены на услуги</div>
   <div class="prices__title--box">
   <span class="title--services">Ремонтные услуги</span>
@@ -148,61 +253,71 @@ Dell. Только у нас вы можете
   <span class="title__duration">Срок</span>
 </div>
 </div>
-  <div class="swiper__prices swiper">
-<ul class="swiper__wrapper wrapper--prices">
-<li class="swiper__slide slide--services slide--testing">
-<p class="prices__title">Ремонтные услуги</p>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper wrapper--prices">
+    <div class="swiper-slide price-slide">
+      <div class="slide--prices">
+        <p class="prices__title">Ремонтные услуги</p>
 <p class="prices__description">Тестирование с выдачей заключения</p>
 <p class="prices__title">Цена</p>
 <p class="prices__description">1 000 ₽</p>
 <p class="prices__title">Срок</p>
 <p class="prices__description">30-120 мин</p>
-<div class="button__form button--run">Заказать</div>
-</li>
-<li class="swiper__slide slide--services slide--diagnostics">
-  <p class="prices__title">Ремонтные услуги</p>
-  <p class="prices__description">Диагностика</p>
-  <p class="prices__title">Цена</p>
-  <p class="prices__description">Бесплатно</p>
-  <p class="prices__title">Срок</p>
-  <p class="prices__description">30 мин</p>
-  <div class="button__form button--run">Заказать</div>
-  </li>
-  <li class="swiper__slide slide--services slide--display">
-    <p class="prices__title">Ремонтные услуги</p>
-    <p class="prices__description">Замена дисплея</p>
-    <p class="prices__title">Цена</p>
-    <p class="prices__description">1 000 ₽</p>
-    <p class="prices__title">Срок</p>
-    <p class="prices__description">30-120 мин</p>
-    <div class="button__form button--run">Заказать</div>
-    </li>
-    <li class="swiper__slide slide--services slide--speakers">
+<div class="button__form button--run button--order">Заказать</div>
+      </div>
+  </div>
+    <div class="swiper-slide price-slide">
+      <div class="slide--prices">
       <p class="prices__title">Ремонтные услуги</p>
-      <p class="prices__description">Замена полифонического динамика</p>
+      <p class="prices__description">Диагностика</p>
+      <p class="prices__title">Цена</p>
+      <p class="prices__description">Бесплатно</p>
+      <p class="prices__title">Срок</p>
+      <p class="prices__description">30 мин</p>
+      <div class="button__form button--run button--order">Заказать</div>   
+    </div>
+    </div>
+    <div class="swiper-slide price-slide">
+      <div class="slide--prices">  
+      <p class="prices__title">Ремонтные услуги</p>
+      <p class="prices__description">Замена дисплея</p>
       <p class="prices__title">Цена</p>
       <p class="prices__description">1 000 ₽</p>
       <p class="prices__title">Срок</p>
       <p class="prices__description">30-120 мин</p>
-      <div class="button__form button--run">Заказать</div>
-      </li>
-      <li class="swiper__slide slide--services slide--software">
-        <p class="prices__title">Ремонтные услуги</p>
-        <p class="prices__description">Замена программного обеспечения</p>
-        <p class="prices__title">Цена</p>
-        <p class="prices__description">1 000 ₽</p>
-        <p class="prices__title">Срок</p>
-        <p class="prices__description">30-120 мин</p>
-        <div class="button__form button--run">Заказать</div>
-        </li>
-      </ul>
-    </div>
+      <div class="button__form button--run button--order">Заказать</div>
+    </div></div>
+    <div class="swiper-slide price-slide">
+      <div class="slide--prices">
+      <p class="prices__title">Ремонтные услуги</p>
+    <p class="prices__description">Замена полифонического динамика</p>
+    <p class="prices__title">Цена</p>
+    <p class="prices__description">1 000 ₽</p>
+    <p class="prices__title">Срок</p>
+    <p class="prices__description">30-120 мин</p>
+    <div class="button__form button--run button--order">Заказать</div>
+    </div></div>
+    <div class="swiper-slide price-slide">
+      <div class="slide--prices">
+      <p class="prices__title">Ремонтные услуги</p>
+      <p class="prices__description">Замена программного обеспечения</p>
+      <p class="prices__title">Цена</p>
+      <p class="prices__description">1 000 ₽</p>
+      <p class="prices__title">Срок</p>
+      <p class="prices__description">30-120 мин</p>
+      <div class="button__form button--run button--order">Заказать</div>
+    </div></div>
+  <div class="swiper-pagination"></div>
+</div>
+</div>
+<!--Commercial - offer-->
     <div class="offer">
       Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
     </div>
     <a href="" class="offerLink">Получить коммерческое предложение
       <img src="images/pinkArrow.svg" alt="" class="offerLink--icon">
     </a>
+<!--Footer-->
     <footer class="footer">
       <span class="footer__information">© 2019 CPS</br>
         Разработано командой Apesong </span>
@@ -211,144 +326,40 @@ Dell. Только у нас вы можете
     </footer>
 </div>
 </div>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="slide--brands">
-          <img src="images/lenovo.svg" alt="">
-          <div class="button__form--arrow"></div>
-        </div>
-    </div>
-      <div class="swiper-slide"><div class="slide--brands">
-        <img src="images/samsung.svg" alt="">
-        <div class="button__form--arrow"></div>
-      </div>
-      </div>
-      <div class="swiper-slide"><div class="slide--brands">
-        <img src="images/apple.svg" alt="">
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--brands">
-        <img src="images/bosch.svg" alt="">
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--brands">
-        <img src="images/hp.svg" alt="">
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--brands">
-        <img src="images/acer.svg" alt="">
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--brands">
-        <img src="images/viewsonic.svg" alt="">
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--brands">
-        <img src="images/sony.svg" alt="">
-        <div class="button__form--arrow"></div>
-      </div></div>
-    </div>
-    <div class="swiper-pagination"></div>
+<!--Popup - connection-->
+  <div class="popup--connection popup" id="popupconnection">
+    <a href="#" class="popup__button button--cancel button__form popup--close"></a>
+    <div class="title__text">
+    <div class="title__icon popup__icon"></div>
+    <h1 class="popup__name">Обратная связь</h1>
   </div>
-
-
-
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="slide--fixing">
-          <span class="slide--name">Ремонт ноутбуков</span>
-          <div class="button__form--arrow"></div>
-        </div>
-    </div>
-      <div class="swiper-slide"><div class="slide--fixing">
-        <span class="slide--name">Ремонт планшетов </span>
-        <div class="button__form--arrow"></div>
-      </div>
-      </div>
-      <div class="swiper-slide"><div class="slide--fixing">
-        <span class="slide--name">Ремонт планшетов </span> 
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--fixing">
-        <span class="slide--name">Ремонт ПК</span>
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--fixing">
-        <span class="slide--name">Ремонт  мониторов</span>
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--fixing">
-        <span class="slide--name">Ремонт  смартфонов</span>
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--fixing">
-        <span class="slide--name">Ремонт  камер</span>
-        <div class="button__form--arrow"></div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--fixing">
-        <span class="slide--name">Ремонт  оргтехники</span>
-        <div class="button__form--arrow"></div>
-      </div></div>
-    </div>
-    <div class="swiper-pagination"></div>
+  <label>
+    <input class="popup__input" type="name" name="name" id="name" placeholder="   Имя" required>
+    <input class="popup__input" type="tel" name="phone" id="phone" placeholder="   Телефон" required>
+    <input class="popup__input" type="tel" name="phone" id="phone" placeholder="   Электронная почта" required>
+    <input class="popup__input input--message" type="tel" name="phone" id="phone" placeholder="  Сообщение" required>
+  </label> 
+  <span class="popup__text">
+    Нажимая “отправить”, вы даете согласие на <span class="text--pink">обработку персональных данных</span>и соглашаетесь с нашей <span class="text--pink">политикой конфиденциальности</span>
+  </span>
+  <button class="button--run button__form button--send">Отправить</button>
   </div>
-
-
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="slide--services">
-          <p class="prices__title">Ремонтные услуги</p>
-<p class="prices__description">Тестирование с выдачей заключения</p>
-<p class="prices__title">Цена</p>
-<p class="prices__description">1 000 ₽</p>
-<p class="prices__title">Срок</p>
-<p class="prices__description">30-120 мин</p>
-<div class="button__form button--run">Заказать</div>
-        </div>
-    </div>
-      <div class="swiper-slide"><div class="slide--services">
-        <p class="prices__title">Ремонтные услуги</p>
-        <p class="prices__description">Диагностика</p>
-        <p class="prices__title">Цена</p>
-        <p class="prices__description">Бесплатно</p>
-        <p class="prices__title">Срок</p>
-        <p class="prices__description">30 мин</p>
-        <div class="button__form button--run">Заказать</div>   
-      </div>
-      </div>
-      <div class="swiper-slide"><div class="slide--services">  
-        <p class="prices__title">Ремонтные услуги</p>
-        <p class="prices__description">Замена дисплея</p>
-        <p class="prices__title">Цена</p>
-        <p class="prices__description">1 000 ₽</p>
-        <p class="prices__title">Срок</p>
-        <p class="prices__description">30-120 мин</p>
-        <div class="button__form button--run">Заказать</div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--services">
-        <p class="prices__title">Ремонтные услуги</p>
-      <p class="prices__description">Замена полифонического динамика</p>
-      <p class="prices__title">Цена</p>
-      <p class="prices__description">1 000 ₽</p>
-      <p class="prices__title">Срок</p>
-      <p class="prices__description">30-120 мин</p>
-      <div class="button__form button--run">Заказать</div>
-      </div></div>
-      <div class="swiper-slide"><div class="slide--services">
-        <p class="prices__title">Ремонтные услуги</p>
-        <p class="prices__description">Замена программного обеспечения</p>
-        <p class="prices__title">Цена</p>
-        <p class="prices__description">1 000 ₽</p>
-        <p class="prices__title">Срок</p>
-        <p class="prices__description">30-120 мин</p>
-        <div class="button__form button--run">Заказать</div>
-      </div></div>
-    </div>
-    <div class="swiper-pagination"></div>
+<!--Popup - call-->
+  <div class="popup--call popup" id="popupcall">
+    <a href="#" class="popup__button button--cancel button__form popup--close"></a>
+    <div class="title__text">
+    <div class="title__icon popup__icon"></div>
+    <h1 class="popup__name">Заказать звонок</h1>
   </div>
+  <label for="phone">
+    <input class="popup__input" type="tel" name="phone" id="phone" placeholder="  Телефон" required>
+  </label>
+  <span class="popup__text">
+    Нажимая “отправить”, вы даете согласие на <span class="text--pink">обработку персональных данных</span>и соглашаетесь с нашей <span class="text--pink">политикой конфиденциальности</span>
+  </span>
+  <button class="button--run button__form button--send">Отправить</button>
+  </div>
+</div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js"></script>
  <script src="sliders-js.js"></script>
