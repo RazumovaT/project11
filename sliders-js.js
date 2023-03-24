@@ -1,6 +1,6 @@
 /*     Свайпер      */
 
-    var swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper", {
       pagination: {
         el: ".swiper-pagination",
       },
@@ -17,34 +17,34 @@
 
 /*    Показать все       */
 
-var buttonMore = document.querySelector('.showmoreButton');
-var buttonLess = document.querySelector('.showlessButton');
-var icon = document.querySelector('.main__button');
+const buttonMore = document.querySelector('.showmoreButton');
+const buttonLess = document.querySelector('.showlessButton');
+const icon = document.querySelector('.main__button');
 
-let sony = document.querySelector('.slide--sony');
-let viewsonic = document.querySelector('.slide--viewsonic');
+const sony = document.querySelector('.slide--sony');
+const viewsonic = document.querySelector('.slide--viewsonic');
 
-var buttonMore2 = document.querySelector('.showmore--fixing');
-var buttonLess2 = document.querySelector('.showless--fixing');
-var icon2 = document.querySelector('.icon--fixing');
+const buttonMore2 = document.querySelector('.showmore--fixing');
+const buttonLess2 = document.querySelector('.showless--fixing');
+const icon2 = document.querySelector('.icon--fixing');
 
-let fixingPk = document.querySelector('.fixing--pk');
-let fixingDisplay = document.querySelector('.fixing--display');
-let fixingPhone = document.querySelector('.fixing--phone');
-let fixingCamera = document.querySelector('.fixing--camera');
-let fixingEquipment = document.querySelector('.fixing--equipment');
+const fixingPk = document.querySelector('.fixing--pk');
+const fixingDisplay = document.querySelector('.fixing--display');
+const fixingPhone = document.querySelector('.fixing--phone');
+const fixingCamera = document.querySelector('.fixing--camera');
+const fixingEquipment = document.querySelector('.fixing--equipment');
 
-var wrapperBrands = document.querySelector('.wrapper--brands');
-let wrapperFixing = document.querySelector('.wrapper--fixing');
-var template1 = document.querySelector('#element__template1').content;
-var element1 = template1.querySelector('div');
-var template2 = document.querySelector('#element__template2').content;
-var clonedElement2 = template2.querySelector('div');
-var template3 = document.querySelector('#element__template3').content;
-var clonedElement3 = template3.querySelector('div');
+const wrapperBrands = document.querySelector('.wrapper--brands');
+const wrapperFixing = document.querySelector('.wrapper--fixing');
+const template1 = document.querySelector('#element__template1').content;
+const brandLenovo = template1.querySelector('div');
+const template2 = document.querySelector('#element__template2').content;
+const brandSamsung = template2.querySelector('div');
+const template3 = document.querySelector('#element__template3').content;
+const brandApple = template3.querySelector('div');
 
 
-let clickBrands = function () {
+const clickBrands = function () {
   icon.classList.toggle('icon__rotate'); 
   fixingPk.classList.toggle('button--hidden');
   buttonLess.classList.toggle('button--hidden');
@@ -54,22 +54,22 @@ let clickBrands = function () {
 buttonMore.addEventListener('click',  () => {
   sony.classList.remove('hidden');
   viewsonic.classList.remove('hidden');
-  wrapperBrands.appendChild(element1);
-  wrapperBrands.appendChild(clonedElement2);
-  wrapperBrands.appendChild(clonedElement3);
+  wrapperBrands.appendChild(brandLenovo);
+  wrapperBrands.appendChild(brandSamsung);
+  wrapperBrands.appendChild(brandApple);
   clickBrands();  
 });
 
     buttonLess.addEventListener('click', function () {
       sony.classList.add('hidden');
       viewsonic.classList.add('hidden');
-        element1.remove();
-        clonedElement2.remove();
-        clonedElement3.remove();
-        clickBrands(); 
+      brandLenovo.remove();
+      brandSamsung.remove();
+      brandApple.remove();
+      clickBrands(); 
     });
   
-let clickFixing = function () {
+    const clickFixing = function () {
   buttonLess2.classList.toggle('button--hidden'); 
   icon2.classList.toggle('icon__rotate');
   buttonMore2.classList.toggle('button--hidden');
@@ -92,17 +92,22 @@ fixingPk.classList.remove('hidden');
 
   /*   Попап -  меню   */   
 
-var burger = document.querySelector('.button--burger');
-var popupMenu = document.querySelector('.popup--menu');
-var cancelB = document.querySelectorAll('.popup--close');
-var wrapperBody = document.querySelector('.main__wrapper');
-var callB = document.querySelector('.connection--call');
-var popupCall = document.querySelector('.popup--call');
-var popup = document.querySelectorAll('.popup');
-var connectionB = document.querySelector('.connection--chat');
-var popupConnection = document.querySelector('.popup--connection');
-var callBHeader = document.querySelector('.call--header');
-var connectionBHeader = document.querySelector('.chat--header');
+  const burger = document.querySelector('.button--burger');
+  const popupMenu = document.querySelector('.popup--menu');
+  const cancelB = document.querySelectorAll('.popup--close');
+  const wrapperBody = document.querySelector('.main__wrapper');
+  const callB = document.querySelector('.connection--call');
+  const popupCall = document.querySelector('.popup--call');
+  const popup = document.querySelectorAll('.popup');
+  const connectionB = document.querySelector('.connection--chat');
+  const popupConnection = document.querySelector('.popup--connection');
+  const callBHeader = document.querySelector('.call--header');
+  const connectionBHeader = document.querySelector('.chat--header');
+
+  const popupMenuClose = function () {
+    popupMenu.classList.add('close');
+    popupMenu.classList.add('opacity');
+  }
 
 burger.addEventListener('click',  () => {
 wrapperBody.style.opacity = '0.2';
@@ -110,7 +115,7 @@ popupMenu.classList.add('open');
 popupMenu.classList.remove('close');
 });
 
-for (var i = 0; i < cancelB.length; i++ ) {
+for (let i = 0; i < cancelB.length; i++ ) {
 cancelB[i].addEventListener('click',  (event) => {
   wrapperBody.style.opacity = '1';
   popupMenu.classList.remove('opacity');
@@ -127,6 +132,7 @@ cancelB[i].addEventListener('click',  (event) => {
   callB.addEventListener('click', () => {
   wrapperBody.style.opacity = '0.2';
   popupMenu.classList.add('close');
+  popupCall.classList.remove('close');
   popupCall.classList.add('popup--open');
   popupMenu.classList.add('opacity');
 });
@@ -134,6 +140,7 @@ cancelB[i].addEventListener('click',  (event) => {
 callBHeader.addEventListener('click', () => {
   wrapperBody.style.opacity = '0.2';
   popupMenu.classList.add('close');
+  popupCall.classList.remove('close');
   popupCall.classList.add('popup--open');
   popupMenu.classList.add('opacity');
 });
@@ -142,16 +149,14 @@ callBHeader.addEventListener('click', () => {
   wrapperBody.style.opacity = '0.2';
   popupConnection.classList.add('popup--open');
   popupConnection.classList.remove('close');
-  popupMenu.classList.add('close');
-  popupMenu.classList.add('opacity');
+  popupMenuClose();
   });
 
   connectionBHeader.addEventListener('click',  () => {
     wrapperBody.style.opacity = '0.2';
     popupConnection.classList.add('popup--open');
     popupConnection.classList.remove('close');
-    popupMenu.classList.add('close');
-    popupMenu.classList.add('opacity');
+   popupMenuClose();
     });
 
 const content = document.querySelector('.content');

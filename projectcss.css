@@ -63,40 +63,45 @@ body{
     height: 100%;
     background-color: #fff;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2); 
+   
 }
 .popup.open {
-    display: block;
+    opacity: 1;
 }
 .popup.close {
-    display: none;
+   visibility: hidden;
 }
 .opacity {
     opacity: 0.2;
 }
+
 @media (max-width:497px){
     .popup--menu {
-        display: none;
+        opacity: 0;
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 2;  
+        z-index: 2; 
+        transition: all 0.3s ease-in-out 0s; 
     }
 }
 @media (min-width:498px) and (max-width: 992px){
     .popup--menu {
-        display: none;
+        opacity: 0;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 2;
         min-height: 1030px;
+        transition: all 0.3s ease-in-out 0s; 
     }
 }
 @media (min-width:993px){
     .popup--menu {
-        min-height: 2137px;
+        min-height: 2255px;
         height: 100%;
         display: block !important;
+        visibility: visible !important;
     }
 }
 .board__button{
@@ -1431,28 +1436,33 @@ font-size: 16px;
 
 /*   Popup - connection   */
 .popup--connection {
+    display: flex;
     flex-direction: column;
     background-color: #fff;
-    display: none;
+    opacity: 0;
     width: 440px;
-    min-height: 940px;  
+    min-height: 940px; 
+    transition: all 0.3s ease-in-out 0s; 
 }
 @media (max-width:497px){
     .popup--connection {
         width: 320px;
         min-height: 680px;
-        height: 100%;    
+        height: 100%;  
+        transition: all 0.3s ease-in-out 0s;   
     }
 }
 @media (min-width:498px) and (max-width: 992px){
     .popup--connection {
         width: 440px;
+        transition: all 0.3s ease-in-out 0s; 
     }
 }
 @media (min-width:993px){
     .popup--connection {
         left: 1000px;
         top: 0;
+        transition: all 0.3s ease-in-out 0s; 
     }
 }
 .popup__input.input--message {
@@ -1466,24 +1476,29 @@ font-size: 16px;
     justify-content: start;
     background-color: #fff;
     min-height: 940px;
-   display: none;
+   opacity: 0;
+   transition: all 0.3s ease-in-out 0s;
 }
 @media (max-width:497px){
     .popup--call {
     width: 320px;
     min-height: 680px;
     height: 100%;
+    transition: all 0.3s ease-in-out 0s; 
     }
 }
 @media (min-width:498px) and (max-width: 992px){
     .popup--call {
         width: 440px;
+        transition: all 0.3s ease-in-out 0s; 
     }
 }
 @media (min-width:993px){
     .popup--call {
+        width: 440px;
         left: 1000px;
         top: 0;
+        transition: all 0.3s ease-in-out 0s; 
     }
 }
 .popup__button {
@@ -1556,5 +1571,5 @@ font-size: 16px;
     top: 0;
     right: 0;
     z-index: 1;
-    display: flex;
+    opacity: 1;
 }
