@@ -134,6 +134,7 @@ for (let i = 0; i < cancelB.length; i++) {
     popupCall.classList.add("close");
     popupConnection.classList.remove("popup--open");
     popupConnection.classList.add("close");
+    document.body.style.position = "";
     event.preventDefault();
   });
 }
@@ -185,5 +186,6 @@ content.addEventListener("click", (e) => {
     popupConnection.classList.remove("popup--open");
     wrapperBody.style.opacity = "1";
     popupMenu.classList.remove("opacity");
+    document.body.style.position = "";
   }
 });

@@ -1437,6 +1437,7 @@ body {
 
 /*   Popup - connection   */
 .popup--connection {
+  position: absolute;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -1444,6 +1445,7 @@ body {
   width: 440px;
   min-height: 940px;
   transition: all 0.2s ease-in-out 0s;
+  top: -100%;
 }
 @media (max-width: 497px) {
   .popup--connection {
@@ -1472,6 +1474,7 @@ body {
 }
 /*   Popup - call   */
 .popup--call {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1479,6 +1482,7 @@ body {
   min-height: 940px;
   opacity: 0;
   transition: all 0.2s ease-in-out 0s;
+  top: -100%;
 }
 @media (max-width: 497px) {
   .popup--call {
@@ -1569,8 +1573,24 @@ body {
 .popup.popup--open {
   position: absolute;
   min-height: 940px;
-  top: 0;
-  right: 0;
   z-index: 1;
   opacity: 1;
+}
+@media (max-width: 497px) {
+  .popup.popup--open {
+    top: 0;
+    left: 0;
+  }
+}
+@media (min-width: 498px) and (max-width: 992px) {
+  .popup.popup--open {
+    top: 0;
+    left: 0;
+  }
+}
+@media (min-width: 993px) {
+  .popup.popup--open {
+    top: 0;
+    right: 0;
+  }
 }
