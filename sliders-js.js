@@ -18,14 +18,14 @@ const swiper = new Swiper(".mySwiper", {
 
 const buttonMore = document.querySelector(".showmoreButton");
 const buttonLess = document.querySelector(".showlessButton");
-const icon = document.querySelector(".main__button");
+const iconBrands = document.querySelector(".main__button");
 
 const sony = document.querySelector(".slide--sony");
 const viewsonic = document.querySelector(".slide--viewsonic");
 
-const buttonMore2 = document.querySelector(".showmore--fixing");
-const buttonLess2 = document.querySelector(".showless--fixing");
-const icon2 = document.querySelector(".icon--fixing");
+const buttonMoreHeader = document.querySelector(".showmore--fixing");
+const buttonLessHeader = document.querySelector(".showless--fixing");
+const iconFeatures = document.querySelector(".icon--fixing");
 
 const fixingPk = document.querySelector(".fixing--pk");
 const fixingDisplay = document.querySelector(".fixing--display");
@@ -35,21 +35,21 @@ const fixingEquipment = document.querySelector(".fixing--equipment");
 
 const wrapperBrands = document.querySelector(".wrapper--brands");
 const wrapperFixing = document.querySelector(".wrapper--fixing");
-const template1 = document.querySelector("#element__template1").content;
-const brandLenovo = template1.querySelector("div");
-const template2 = document.querySelector("#element__template2").content;
-const brandSamsung = template2.querySelector("div");
-const template3 = document.querySelector("#element__template3").content;
-const brandApple = template3.querySelector("div");
+const brandLenovoCopy = document.querySelector("#element__template1").content;
+const brandLenovo = brandLenovoCopy.querySelector("div");
+const brandSamsungCopy = document.querySelector("#element__template2").content;
+const brandSamsung = brandSamsungCopy.querySelector("div");
+const brandAppleCopy = document.querySelector("#element__template3").content;
+const brandApple = brandAppleCopy.querySelector("div");
 
 var on = function () {
   buttonLess.classList.remove("button--hidden");
-  icon.classList.toggle("icon__rotate");
+  iconBrands.classList.toggle("icon__rotate");
   buttonMore.classList.add("button--hidden");
 };
 
 const clickBrands = function () {
-  icon.classList.toggle("icon__rotate");
+  iconBrands.classList.toggle("icon__rotate");
   fixingPk.classList.toggle("button--hidden");
   buttonLess.classList.toggle("button--hidden");
   buttonMore.classList.toggle("button--hidden");
@@ -73,23 +73,23 @@ buttonLess.addEventListener("click", function () {
 });
 
 const clickFixing = function () {
-  buttonLess2.classList.toggle("button--hidden");
-  icon2.classList.toggle("icon__rotate");
-  buttonMore2.classList.toggle("button--hidden");
+  buttonLessHeader.classList.toggle("button--hidden");
+  iconFeatures.classList.toggle("icon__rotate");
+  buttonMoreHeader.classList.toggle("button--hidden");
   fixingDisplay.classList.toggle("button--hidden");
   fixingCamera.classList.toggle("button--hidden");
   fixingPhone.classList.toggle("button--hidden");
   fixingEquipment.classList.toggle("button--hidden");
 };
 
-buttonMore2.addEventListener("click", () => {
+buttonMoreHeader.addEventListener("click", () => {
   // buttonLess2.classList.remove("button--hidden");
   // icon2.classList.toggle("icon__rotate");
   // buttonMore2.classList.add("button--hidden");
   clickFixing();
 });
 
-buttonLess2.addEventListener("click", () => {
+buttonLessHeader.addEventListener("click", () => {
   // buttonLess2.classList.add("button--hidden");
   // icon2.classList.toggle("icon__rotate");
   // buttonMore2.classList.remove("button--hidden");
